@@ -55,6 +55,8 @@
 			
 				<li><a href="/">主页</a></li>
 	        
+				<li><a href="/archives/index.html">归档</a></li>
+	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
@@ -113,6 +115,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -130,12 +134,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -159,7 +165,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">江舟</a>
+      <a class="article-title" href="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">hexo博客插入图片失败解决方法</a>
     </h1>
   
 
@@ -175,69 +181,9 @@
         <h1 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h1><p>今天晚上花了大概1个小时在晚上搜寻各种hexo博客插入图片无法显示的解决办法，很多方法是重叠的，所以真正不同的解决方法并不多。</p>
 <p>尤其让我有些惊讶的是不同的几篇博客，内容根本完全一样，就是纯粹的copy，虽然说明了转载（注明转载的话往往还放在最后一句，这种东西不应该开篇说明最好吗？），但是我觉得直接给出链接不就可以了吗？为何还要完全从头到尾copy一遍？而且多少加上一些自己的理解，稍微修缮一下原博文，这样不断转载的版本也会越来越好。</p>
 <p>闲言碎语多扯了一点。本回答受该<a href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener">博客</a>启发较大。</p>
-<h1 id="2、解决方案"><a href="#2、解决方案" class="headerlink" title="2、解决方案"></a>2、解决方案</h1><h2 id="2-1-创建图片资源文件夹"><a href="#2-1-创建图片资源文件夹" class="headerlink" title="2.1 创建图片资源文件夹"></a>2.1 创建图片资源文件夹</h2><p>网上有关的解决方式几乎很大一部分会提到这一点：将<code>_config.yml</code> 文件中的<code>post_asset_folder</code> 选项设为 <code>true</code> 来打开。事实上这正是hexo<a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">官方文档</a>给出的解决<strong>方案之一</strong>中的<strong>一个步骤</strong>。仔细阅读后会发现如下几点：</p>
-<ol>
-<li>该操作的作用就是在使用<code>hexo new xxx</code>指令新建博文时，在相同路径下同步创建一个<code>xxx</code>文件夹，而<code>xxx</code>文件夹的作用就是用来存放图片资源；</li>
-<li>就我个人而言，我偏好于直接在<code>source\_posts</code>文件夹下新建md文件，而不是通过<code>hexo new xxx</code>指令；</li>
-<li>那么直接新建<code>xxx.md</code>再新建<code>xxx</code>文件夹，这种操作的最终效果和使用<code>hexo new xxx</code>指令新建博文的效果一样吗？经过实测，是一样的。</li>
-</ol>
-<p>基于以上3点，告诉大家几个结论：</p>
-<ol>
-<li>新建博文可以不用<code>hexo new xxx</code>指令，我较为推荐直接新建文件和文件夹的方式，只要达到<strong>一个md文件，一个同名文件夹</strong>的效果即可；</li>
-<li>【将<code>_config.yml</code> 文件中的<code>post_asset_folder</code> 选项设为 <code>true</code> 】是<strong>必须</strong>的！理论上既然没用<code>hexo new xxx</code>指令，文件夹也是我自己新建的，这一步设置的意义似乎并不存在，但是后文介绍的插件必须在<code>post_asset_folder</code> 选项设为 <code>true</code>的情况下才能生效——<strong>本人亲测，大家记住这么设置即可</strong>！</li>
-</ol>
-<h2 id="2-2-typora中图像设置"><a href="#2-2-typora中图像设置" class="headerlink" title="2.2 typora中图像设置"></a>2.2 typora中图像设置</h2><p>一般来说，大家会现在typora里写好md格式的博客，然后通过<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>进行一下本地测试，确认无误后再发布到远端。</p>
-<p>暂且不说hexo博客的图片插入是个问题，我相信当初单纯利用typora做笔记时，图片文件的管理就让很多人头疼过，typora官方似乎也意识到这个问题，所以<code>偏好设置</code>中<code>图像</code>是专门的一项，提供了很多选择。</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png" alt="在这里插入图片描述"></p>
-<p>我相信大多数同学写md时的图片很多可能是直接截图或者在其他地方copy的，然后在typora中直接粘贴就ok了。但是这么做之前最好把typora插入图片时采取何种操作配置好，否则md文件和图片相隔十万八千里，后续一旦移动md文件图片就识别不出来，相信大家用过typora都深有体会。</p>
-<p>所以接下来讲一下typora如何设置。直接给结论：<br><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png" alt="在这里插入图片描述"></p>
-<p>框里的路径是：<code>./${filename}</code>。<code>./</code>表示当前文件夹，<code>${filename}</code>表示当前文件名。这么设置的好处：</p>
-<ol>
-<li>图片资源文件夹有了；</li>
-<li>而且是同名文件夹！（2.1中的文件夹其实不用手动添加了）</li>
-</ol>
-<p>这么设置的结果就是：想写篇博客，在<code>source\_posts</code>文件夹下新建<code>xxx.md</code>文件，写着写着需要插一张图，从别处复制，然后在typora中直接粘贴，<code>bling!</code>图片资源文件夹自动搞定，并不用关心什么文件夹，只管专注于<code>md</code>文件即可。</p>
-<h2 id="2-3-插件下载"><a href="#2-3-插件下载" class="headerlink" title="2.3 插件下载"></a>2.3 插件下载</h2><p>这个很多博客也有提到，插件的名字叫<code>hexo-asset-image</code>，相信在网上找了一波解决方案的同学一定对这个名字不陌生。</p>
-<p>这个插件的不同版本可能会有不同的影响，我最终成功解决问题的版本是用如下命令下载的：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https:<span class="comment">//github.com/CodeFalling/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
-<p>为什么需要这么插件呢？</p>
-<p>因为我们虽然在<code>source\_posts</code>文件夹下写了md文件，也有了图片资源文件夹存了图片，但从我们前面typora中的设置不难知道，实际上md文件中的图片路径都是相对路径（<code>./${filename}</code>）。而实际网上看到的博文显然不是md文件，而是html文件，从md到html的转变就是hexo帮我们做的，还记得<code>hexo g</code>命令吗？就是干这个的。转换后的html文件在<code>public</code>目录下，路径是通过日期指示的。</p>
-<p>下面第一张图是存放md文件的地方，图片就在图中的<code>jiangzhou</code>文件夹中；第二张图是generate之后存在html和图片资源的地方。<br><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png" alt="在这里插入图片描述"></p>
-<p>大家如果了解过html的话，应该知道里面的图片应该是指定绝对路径的，大家可以打开上面第二张图的<code>index.html</code>，找到插入图片的地方，查看是否是可用的绝对路径，我的如下图。大家如果问题还没解决的话应该不是像我一样的日期+文件夹指明的绝对路径。</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png" alt="在这里插入图片描述"></p>
-<p>说到这儿，大家应该知道，理论上需要<strong>将md中图片的相对路径转换成html中的绝对路径</strong>，这样图片才能正常显示。因为我们图片资源也有了，显示不出来只能是路径不对（为验证，大家图片显示不对的话，打开index.html，插图片地方的路径肯定是一串不明所以的字母数字）。</p>
-<p><strong>路径转换</strong>就是该节最开始提到的插件的作用：根据md图片的相对路径，给出html中图片的绝对路径。</p>
-<h2 id="2-4-修改md图片路径"><a href="#2-4-修改md图片路径" class="headerlink" title="2.4 修改md图片路径"></a>2.4 修改md图片路径</h2><p>经过前面typora的设置，大家粘贴图片到typora应该是这种画风：<br><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png" alt="在这里插入图片描述"></p>
-<p>路径：md文件名/图片名</p>
-<p>图片资源文件夹：自动生成且同名。</p>
-<p>这时如果用<code>hexo clean</code>、<code>hexo g</code>生成html文件，用Notepad++或其他工具打开index.html（路径见下方第一张图），找到插图片的地方，查看图片路径（见下方第一张图）：</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png" alt="在这里插入图片描述"></p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png" alt="在这里插入图片描述"></p>
-<p>发现图片路径似乎多了一串<code>07/07/test</code>！如果用<code>hexo s</code>在本地查看网页，会发现是下面这个样子：</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png" alt="在这里插入图片描述"></p>
-<p>点开那个未加载的图：</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png" alt="在这里插入图片描述"></p>
-<p>继续点<code>The image</code>：</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png" alt="在这里插入图片描述"></p>
-<p>可以发现这里显示的路径和我们在html文件源码中看到的是一致的，既然觉得路径重复，那么我们就把重复的删了试试看：</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png" alt="在这里插入图片描述"></p>
-<p>图片显示出来了！</p>
-<p>既然是路径问题，那么是不是插件有问题？或者我们使用方法错了？</p>
-<p>找到插件安装位置（插件都在node_modules文件夹下），打开readme文件（怎么是1985年的？！<code>(*/ω＼*)</code>）</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png" alt="在这里插入图片描述"></p>
-<p>readme如下：</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png" alt="在这里插入图片描述"></p>
-<p>瞬间发现别人的说明书讲得明明白白，言简意赅！我们的转化后路径不对正是因为我们md文件中图片的路径不对，图片名前面不能有其他东西！</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png" alt="在这里插入图片描述"></p>
-<p>删去<code>test/</code>（这样md中图片就没法正常显示了），重新<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>测试——</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png" alt="在这里插入图片描述"></p>
-<p>本地网页显示如下：</p>
-<p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png" alt="在这里插入图片描述"></p>
-<p>发布到远端我这边也没什么问题，至此该问题算是解决了。主要就是编译（我姑且称之为编译，有点那个味道）前需要在md中把图片的路径都删去前面的<code>xxx/</code>，图片一多可能还是有些繁琐，但目前还没有找到更好的替代方法。</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png" alt="在这里插入图片描述"></p>
-<p>找解决方案找了一个多小时，写这篇博客好像写了2个多小时。感觉应该把整个过程讲得还算比较清楚了。</p>
-<p>但是这种问题向来因人而异，同样的解决方法可能可以解决我的问题，但对另一个人无效。还是要多查找资料，多尝试，多思考。</p>
-
+        
+          <a class="article-more-a" href="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/#more">more >></a>
+        
       
 
       
@@ -290,69 +236,6 @@
 
 
   
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/07/test/">test</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/07/test/" class="archive-article-date">
-  	<time datetime="2020-07-07T15:24:00.782Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2020/07/07/test/image-20200707232157788.png" alt="image-20200707232157788"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/07/test/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-jiangzhou" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -374,40 +257,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>今天开通了自己的个人博客，好像也叫个人网站。其实CSDN之类的就已经具备了同样的功能了，而且它有的我这里很多都没有。但是总感觉这样子似乎就有了属于自己的小天地，就很舒服。</p>
-<p>这个是依托于github的，并不是自己搭建前台后台数据库这种从零起步的方式。虽然好像不那么牛批，但现在一是能力有限，二是还没有什么特别的需求，暂时也还不用搞得过于复杂。</p>
-<p>就我个人而言，能写字，能贴图，能输公式，能敲代码也就可以了，所以接下来我就把这几种都试验一下。</p>
-<ul>
-<li>图片</li>
-</ul>
-<p><img src="/2020/07/07/jiangzhou/1007550.jpg" alt="我妻善逸"></p>
-<p>而且之前特地找了hexo博客图片该怎么<a href="https://www.cnblogs.com/hugochen1024/p/12570656.html" target="_blank" rel="noopener">添加</a>，也就是通过设置然后在hexo生成md文件时自动生成一个文件夹；但是之前typora就已经设置过添加图片时自动添加文件夹，这么一来似乎也没必要通过hexo的yml文件设置了。</p>
-<ul>
-<li>公式</li>
-</ul>
-<ol>
-<li><p>行内公式：$f=x^2$</p>
-</li>
-<li><p>单独成行：</p>
-</li>
-</ol>
-<script type="math/tex; mode=display">
-f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好像没法交叉引用自动更新（想想也可以理解），只能手动引用公式$(1)$。</p>
-<ul>
-<li>代码</li>
-</ul>
-<ol>
-<li><p>行内代码片：<code>a=ones(m,n)</code>（我发现我完全就是在写markdown，如果兼容就最好了）</p>
-</li>
-<li><p>代码块：</p>
-</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">system.out.println(<span class="string">"今天开通了个人博客！"</span>)</span><br></pre></td></tr></table></figure>
-<p>好了，实验结束！</p>
-<p>其实这篇博客本来是想把我的那篇《江舟》贴上来的，倒不是说那篇写得多好，只是做实验习惯性地用那篇，包括我的个人公众号也是用的那篇作为实验文章。所以博文的tag以及题目都和实际内容有些不对，此处解释一下。</p>
-<p>好像没什么要说的了，以后除了写一些专业上的总结，可能还会写点比较随性的其他东西（是不是叫“随笔”？）。可能会有读后感之类的。其实我个人觉得读后感这种东西比较麻烦，因为你要写的话一般就得回顾情节，记不住就得回去翻，这个过程很麻烦。但是我觉得一篇比较好的读后感肯定是要做到这样子的，那些up做视频有的真的堪称”一帧一帧“看原片。所以：1、回顾也是有必要的，看完就忘莫得感想似乎也就没有很大意义；2、好东西肯定是要花时间的。</p>
-<p>差不多就这样吧，最近有点颓，感觉啥事儿都没干，论文看得既慢又不得劲儿，无功优化的文章似乎有点问题，还不如直接线性化之后用求解器来得快，还得继续研究。今天还被七年级的表弟（不知道是不是这么称呼）的数学题问住了，不过后面和韬神讨论认为是题目印刷错了（因为直线和圆无交点，强解是无实数解的）。顺便也贴出来，大家有兴趣可以尝试一下。</p>
-<p><img src="/2020/07/07/jiangzhou/image-20200707205216990.png" alt="题目"></p>
-
+        
+          <a class="article-more-a" href="/2020/07/07/jiangzhou/#more">more >></a>
+        
       
 
       
@@ -523,83 +375,6 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 
 
   
-    <article id="post-blog2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/07/blog2/">blog2</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/07/blog2/" class="archive-article-date">
-  	<time datetime="2020-07-07T09:43:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><p>据说支持markdown语法，那我直接添加一条公式：</p>
-<p>$f=x^2$</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x=ones(m,n)</span><br></pre></td></tr></table></figure>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><p><code>E=mc^2</code></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">NO.2</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/07/blog2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -683,11 +458,24 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
     	<div class="footer-left">
     		&copy; 2020 Boyou Jiang
     	</div>
+		
+		<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+		
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
+		
     </div>
   </div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 </footer>
     </div>
     <script>
@@ -790,10 +578,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">文字</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">NO.2</a>
               </li>
             
             <div class="clearfix"></div>
