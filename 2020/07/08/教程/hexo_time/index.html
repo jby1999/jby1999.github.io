@@ -6,26 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo中插入pdf文件 | Boyou Jiang&#39;s Personal Website</title>
+  <title>hexo博客时间添加时分秒 | Boyou Jiang&#39;s Personal Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="下载链接">
+  <meta name="description" content="前言由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo中插入pdf文件">
-<meta property="og:url" content="http://yoursite.com/2020/07/08/hexo_pdf/index.html">
+<meta property="og:title" content="hexo博客时间添加时分秒">
+<meta property="og:url" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/index.html">
 <meta property="og:site_name" content="Boyou Jiang&#39;s Personal Website">
-<meta property="og:description" content="下载链接">
+<meta property="og:description" content="前言由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_pdf/image-20200708132425004.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_pdf/image-20200708132815762.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_pdf/image-20200708133055817.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_pdf/image-20200708133725644.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_pdf/image-20200708133526227.png">
-<meta property="article:published_time" content="2020-07-07T18:08:50.000Z">
-<meta property="article:modified_time" content="2020-07-07T18:08:50.000Z">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140110539.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140246998.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140635905.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708141048768.png">
+<meta property="article:published_time" content="2020-07-08T06:46:04.000Z">
+<meta property="article:modified_time" content="2020-07-08T06:46:04.000Z">
 <meta property="article:author" content="Boyou Jiang">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/07/08/hexo_pdf/image-20200708132425004.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png">
   
     <link rel="alternative" href="/atom.xml" title="Boyou Jiang&#39;s Personal Website" type="application/atom+xml">
   
@@ -64,32 +64,33 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><font size=3><a href="/">主页</a></font></li>
 	        
-				<li><a href="/archives/index.html">归档</a></li>
+				<li><font size=3><a href="/archives/index.html">归档</a></font></li>
 	        
-				<li><a href="/CV">简历</a></li>
+				<li><font size=3><a href="/CV">简历</a></font></li>
 	        
-				<li><a href="/album">相册</a></li>
+				<li><font size=3><a href="/album">相册</a></font></li>
 	        
-				<li><a href="/categories/%E7%A7%91%E7%A0%94">科研</a></li>
+				<li><font size=3><a href="/categories/%E7%A7%91%E7%A0%94">科研</a></font></li>
 	        
-				<li><a href="/categories/%E7%94%9F%E6%B4%BB">生活</a></li>
+				<li><font size=3><a href="/categories/%E7%94%9F%E6%B4%BB">生活</a></font></li>
 	        
 			</ul>
 		</nav>
+		<br>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<font size=3><a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a></font>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a>
+    			<font size=3><a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a></font>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			<font size=3><a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a></font>
     			
             
 		</nav>
@@ -185,14 +186,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo_pdf" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-教程/hexo_time" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo中插入pdf文件
+      hexo博客时间添加时分秒
     </h1>
   
 
@@ -210,56 +211,43 @@
 <!--显示阅读次数完毕-->
 
         
-        <a href="/2020/07/08/hexo_pdf/" class="archive-article-date">
-  	<time datetime="2020-07-07T18:08:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-08 02:08:50</time>
+        <a href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/" class="archive-article-date">
+  	<time datetime="2020-07-08T06:46:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-08 14:46:04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>下载<a href="./test.pdf">链接</a></p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。</p>
+<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png" alt="image-20200708135440487" style="zoom:80%;"></div>
+
 <a id="more"></a>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="初期尝试"><a href="#初期尝试" class="headerlink" title="初期尝试"></a>初期尝试</h2><p>最开始在网上搜寻一番并没有介绍这个的，然后我想着年月日和时分秒肯定是都存在hexo里面的，只不过是yilia模板默认只取了年月日，只要我找到年月日加载到页面是在哪个文件哪个地方进行设置的，应该就有办法把时分秒一起加上去。</p>
+<p>在yilia的文件里瞎找一通，最终找到是在如下文件（<code>date.ejs</code>）中进行设置：</p>
+<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140110539.png" alt="image-20200708140110539" style="zoom:80%;"></div>
 
+<p>打开该文件，可以看到是下面一串东西。</p>
+<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140246998.png" alt="image-20200708140246998" style="zoom:80%;"></div>
 
-	<div class="row">
-    <embed src="test.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-<p>页面的pdf路径和文章的pdf路径的写法不同。</p>
+<p>大致可以猜到是通过<code>date(post.date,date_format)</code>把时间传递到页面上的，我最终确定其实还结合了博客网页的html源码：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140635905.png" alt="image-20200708140635905" style="zoom:80%;"></p>
+<p>图中圈出来的一串变量和<code>date.ejs</code>里的显然是一样的，然后后面的<code>date(post.date,date_format)</code>消失变成了具体的时间，可以断定<code>date(post.date,date_format)</code>就是显示时间的变量。</p>
+<p>接下来的步骤就带点尝试了，试着把括号里的<code>date_format</code>换成<code>time_format</code>，也试着改掉博客配置文件里的时间格式（可以去下图<a href="http://momentjs.com/docs/#/displaying/format/" target="_blank" rel="noopener">网站</a>找格式）。</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708141048768.png" alt="image-20200708141048768" style="zoom:80%;"></p>
+<h2 id="最终设置"><a href="#最终设置" class="headerlink" title="最终设置"></a>最终设置</h2><p>最终敲定的是年月日+时分（date+空格+time）。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date(post.date,date_format)+<span class="string">" "</span>+time(post.time,date_format)</span><br></pre></td></tr></table></figure>
+<p>改配置文件里的时间格式好像也是可以的（我试的是<code>LLL</code>格式），因为我中间有出来过一次。这里想吐槽一下就是有时候更改配置，浏览器刷新显示会有延时，然后就时而让人不爽。</p>
+<p>效果就是最开始的第一张图了~~</p>
 <ul>
-<li>文章</li>
+<li>补充</li>
 </ul>
-<p>本文即为一篇文章，经试验，下图的路径可以正常显示。也就是说文章中是否添加<code>./</code>都可以正常识别出，但是不可<code>./hexo_pdf/test.pdf</code>，这样子编译生成后的路径会多出一个<code>hexo_pdf</code>导致无法识别到pdf文件。</p>
-<div align="center"><img src="/2020/07/08/hexo_pdf/image-20200708132425004.png" alt="image-20200708132425004" style="zoom:80%;"></div>
-
-<ul>
-<li>页面</li>
-</ul>
-<p>页面的路径必须填写完整，如下图。</p>
-<div align="center"><img src="/2020/07/08/hexo_pdf/image-20200708132815762.png" alt="image-20200708132815762" style="zoom:80%;"></div>
-
-<p>因为hexo本身对待页面和文章就是不同的，在public文件夹下可以看到，post和page本身的编译就是不同的。</p>
-<div align="center"><img src="/2020/07/08/hexo_pdf/image-20200708133055817.png" alt="image-20200708133055817" style="zoom:100%;"></div>
-
-<p>我们前面介绍的针对于图片的插件，其实也可以认为是针对文章的，他会自动生成<code>2020/07/xx</code>样式的前缀，正是因为文章编译后的绝对路径就是这种形式的。如果我们再添加一些前缀，反而和插件所做的工作冲突，导致路径找不到。</p>
-<p>而既然插件没有帮我们对页面的路径进行修改，那我们就得写全编译后的绝对路径。这照着下面这张图其实很好写。</p>
-<div align="center"><img src="/2020/07/08/hexo_pdf/image-20200708133725644.png" alt="image-20200708133725644" style="zoom:80%;"></div>
-
-<p>也可以简单测试一下：如果在页面环境下用<code>./CV_Chinese.pdf</code>设置，可以看到路径是下面这个，而<code>CV</code>目录下是没有<code>CV_Chinese.pdf</code>的，只有<code>index</code>下才有，所以报错。</p>
-<div align="center"><img src="/2020/07/08/hexo_pdf/image-20200708133526227.png" alt="image-20200708133526227" style="zoom:100%;"></div>
-
-<ul>
-<li>总结</li>
-</ul>
-<ol>
-<li>插件针对于文章才生效，所以文章中无论是图片还是pdf等其他附件资源，不能画蛇添足地在路径前面多加东西；</li>
-<li>页面中的资源，填写绝对路径；</li>
-<li>总之不外乎这里列出的三种情况（绝对路径，./xxx，直接xxx），实在不行三个都尝试一遍。</li>
-</ol>
-<p><strong>注意</strong>：插入貌似插图插pdf路径里都不能有中文，一有中文就各种<code>%B%Exxx</code>的，然后就出不来，所以可以在文件命名的时候用英文，然后title里用中文。</p>
+<p>hexo博客显示的时间是md文件改动的时间，并不是上面写的<code>date: xxxx</code>。</p>
+<h1 id="重要订正"><a href="#重要订正" class="headerlink" title="重要订正"></a>重要订正</h1><p><code>date(post.date,post.time,date_format)+&quot; &quot;+time(post.date,post.time,date_format)</code></p>
+<p>刚刚写博客的时候还特地试着把date(xxx)里的post.time以及time(xxx)里的post.date删了，然后发现就出现了刷新一下页面，所有博文的时间都显示跟着刷新显示当前的时间，这tm不成了时钟了吗~~</p>
+<p>总之，都不要删，就挺好。</p>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>本来想显示更新时间而不是创建时间，但是不知道怎么把updated显示到页面上。</p>
+<p>还有就是我忽然觉得没有必要了~~我直接在写完或者更新的时候把date改掉，然后在正文中注明每个时间点不就可以吗？没必要折腾了，累了累了。</p>
 
       
 
@@ -350,7 +338,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/08/hexo_pdf/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -364,18 +352,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/07/08/index/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/07/08/%E7%94%9F%E6%B4%BB/%E8%BF%BD%E7%95%AA/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          album
+          追番
         
       </div>
     </a>
   
   
-    <a href="/2020/07/08/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo博客插入图片失败解决方法</div>
+    <a href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E4%B8%ADpost%E5%92%8Cpage%E7%9A%84%E5%B7%AE%E5%88%AB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo中post和page的差别</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -402,7 +390,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方法"><span class="toc-number">2.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初期尝试"><span class="toc-number">2.1.</span> <span class="toc-text">初期尝试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最终设置"><span class="toc-number">2.2.</span> <span class="toc-text">最终设置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重要订正"><span class="toc-number">3.</span> <span class="toc-text">重要订正</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题"><span class="toc-number">4.</span> <span class="toc-text">问题</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -552,11 +540,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">文字</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文字</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>

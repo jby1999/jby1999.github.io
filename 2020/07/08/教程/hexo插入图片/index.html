@@ -6,26 +6,40 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo博客时间添加时分秒 | Boyou Jiang&#39;s Personal Website</title>
+  <title>hexo博客插入图片失败解决方法 | Boyou Jiang&#39;s Personal Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。">
+  <meta name="description" content="1、前言今天晚上花了大概1个小时在晚上搜寻各种hexo博客插入图片无法显示的解决办法，很多方法是重叠的，所以真正不同的解决方法并不多。 尤其让我有些惊讶的是不同的几篇博客，内容根本完全一样，就是纯粹的copy，虽然说明了转载（注明转载的话往往还放在最后一句，这种东西不应该开篇说明最好吗？），但是我觉得直接给出链接不就可以了吗？为何还要完全从头到尾copy一遍？而且多少加上一些自己的理解，稍微修缮一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客时间添加时分秒">
-<meta property="og:url" content="http://yoursite.com/2020/07/08/hexo_time/index.html">
+<meta property="og:title" content="hexo博客插入图片失败解决方法">
+<meta property="og:url" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/index.html">
 <meta property="og:site_name" content="Boyou Jiang&#39;s Personal Website">
-<meta property="og:description" content="前言由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。">
+<meta property="og:description" content="1、前言今天晚上花了大概1个小时在晚上搜寻各种hexo博客插入图片无法显示的解决办法，很多方法是重叠的，所以真正不同的解决方法并不多。 尤其让我有些惊讶的是不同的几篇博客，内容根本完全一样，就是纯粹的copy，虽然说明了转载（注明转载的话往往还放在最后一句，这种东西不应该开篇说明最好吗？），但是我觉得直接给出链接不就可以了吗？为何还要完全从头到尾copy一遍？而且多少加上一些自己的理解，稍微修缮一">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_time/image-20200708135440487.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_time/image-20200708140110539.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_time/image-20200708140246998.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_time/image-20200708140635905.png">
-<meta property="og:image" content="http://yoursite.com/2020/07/08/hexo_time/image-20200708141048768.png">
-<meta property="article:published_time" content="2020-07-08T06:46:04.000Z">
-<meta property="article:modified_time" content="2020-07-08T06:46:04.000Z">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png">
+<meta property="article:published_time" content="2020-07-07T16:18:55.000Z">
+<meta property="article:modified_time" content="2020-07-07T16:18:55.000Z">
 <meta property="article:author" content="Boyou Jiang">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/07/08/hexo_time/image-20200708135440487.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png">
   
     <link rel="alternative" href="/atom.xml" title="Boyou Jiang&#39;s Personal Website" type="application/atom+xml">
   
@@ -64,32 +78,33 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><font size=3><a href="/">主页</a></font></li>
 	        
-				<li><a href="/archives/index.html">归档</a></li>
+				<li><font size=3><a href="/archives/index.html">归档</a></font></li>
 	        
-				<li><a href="/CV">简历</a></li>
+				<li><font size=3><a href="/CV">简历</a></font></li>
 	        
-				<li><a href="/album">相册</a></li>
+				<li><font size=3><a href="/album">相册</a></font></li>
 	        
-				<li><a href="/categories/%E7%A7%91%E7%A0%94">科研</a></li>
+				<li><font size=3><a href="/categories/%E7%A7%91%E7%A0%94">科研</a></font></li>
 	        
-				<li><a href="/categories/%E7%94%9F%E6%B4%BB">生活</a></li>
+				<li><font size=3><a href="/categories/%E7%94%9F%E6%B4%BB">生活</a></font></li>
 	        
 			</ul>
 		</nav>
+		<br>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<font size=3><a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a></font>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a>
+    			<font size=3><a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a></font>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			<font size=3><a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a></font>
     			
             
 		</nav>
@@ -185,14 +200,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo_time" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-教程/hexo插入图片" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo博客时间添加时分秒
+      hexo博客插入图片失败解决方法
     </h1>
   
 
@@ -210,43 +225,80 @@
 <!--显示阅读次数完毕-->
 
         
-        <a href="/2020/07/08/hexo_time/" class="archive-article-date">
-  	<time datetime="2020-07-08T06:46:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-08 14:46:04</time>
+        <a href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" class="archive-article-date">
+  	<time datetime="2020-07-07T16:18:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-08 00:18:55</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。</p>
-<div align="center"><img src="/2020/07/08/hexo_time/image-20200708135440487.png" alt="image-20200708135440487" style="zoom:80%;"></div>
-
+        <h1 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h1><p>今天晚上花了大概1个小时在晚上搜寻各种hexo博客插入图片无法显示的解决办法，很多方法是重叠的，所以真正不同的解决方法并不多。</p>
+<p>尤其让我有些惊讶的是不同的几篇博客，内容根本完全一样，就是纯粹的copy，虽然说明了转载（注明转载的话往往还放在最后一句，这种东西不应该开篇说明最好吗？），但是我觉得直接给出链接不就可以了吗？为何还要完全从头到尾copy一遍？而且多少加上一些自己的理解，稍微修缮一下原博文，这样不断转载的版本也会越来越好。</p>
+<p>闲言碎语多扯了一点。本回答受该<a href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener">博客</a>启发较大。</p>
 <a id="more"></a>
-<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="初期尝试"><a href="#初期尝试" class="headerlink" title="初期尝试"></a>初期尝试</h2><p>最开始在网上搜寻一番并没有介绍这个的，然后我想着年月日和时分秒肯定是都存在hexo里面的，只不过是yilia模板默认只取了年月日，只要我找到年月日加载到页面是在哪个文件哪个地方进行设置的，应该就有办法把时分秒一起加上去。</p>
-<p>在yilia的文件里瞎找一通，最终找到是在如下文件（<code>date.ejs</code>）中进行设置：</p>
-<div align="center"><img src="/2020/07/08/hexo_time/image-20200708140110539.png" alt="image-20200708140110539" style="zoom:80%;"></div>
-
-<p>打开该文件，可以看到是下面一串东西。</p>
-<div align="center"><img src="/2020/07/08/hexo_time/image-20200708140246998.png" alt="image-20200708140246998" style="zoom:80%;"></div>
-
-<p>大致可以猜到是通过<code>date(post.date,date_format)</code>把时间传递到页面上的，我最终确定其实还结合了博客网页的html源码：</p>
-<p><img src="/2020/07/08/hexo_time/image-20200708140635905.png" alt="image-20200708140635905" style="zoom:80%;"></p>
-<p>图中圈出来的一串变量和<code>date.ejs</code>里的显然是一样的，然后后面的<code>date(post.date,date_format)</code>消失变成了具体的时间，可以断定<code>date(post.date,date_format)</code>就是显示时间的变量。</p>
-<p>接下来的步骤就带点尝试了，试着把括号里的<code>date_format</code>换成<code>time_format</code>，也试着改掉博客配置文件里的时间格式（可以去下图<a href="http://momentjs.com/docs/#/displaying/format/" target="_blank" rel="noopener">网站</a>找格式）。</p>
-<p><img src="/2020/07/08/hexo_time/image-20200708141048768.png" alt="image-20200708141048768" style="zoom:80%;"></p>
-<h2 id="最终设置"><a href="#最终设置" class="headerlink" title="最终设置"></a>最终设置</h2><p>最终敲定的是年月日+时分（date+空格+time）。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date(post.date,date_format)+<span class="string">" "</span>+time(post.time,date_format)</span><br></pre></td></tr></table></figure>
-<p>改配置文件里的时间格式好像也是可以的（我试的是<code>LLL</code>格式），因为我中间有出来过一次。这里想吐槽一下就是有时候更改配置，浏览器刷新显示会有延时，然后就时而让人不爽。</p>
-<p>效果就是最开始的第一张图了~~</p>
-<ul>
-<li>补充</li>
-</ul>
-<p>hexo博客显示的时间是md文件改动的时间，并不是上面写的<code>date: xxxx</code>。</p>
-<h1 id="重要订正"><a href="#重要订正" class="headerlink" title="重要订正"></a>重要订正</h1><p><code>date(post.date,post.time,date_format)+&quot; &quot;+time(post.date,post.time,date_format)</code></p>
-<p>刚刚写博客的时候还特地试着把date(xxx)里的post.time以及time(xxx)里的post.date删了，然后发现就出现了刷新一下页面，所有博文的时间都显示跟着刷新显示当前的时间，这tm不成了时钟了吗~~</p>
-<p>总之，都不要删，就挺好。</p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>本来想显示更新时间而不是创建时间，但是不知道怎么把updated显示到页面上。</p>
-<p>还有就是我忽然觉得没有必要了~~我直接在写完或者更新的时候把date改掉，然后在正文中注明每个时间点不就可以吗？没必要折腾了，累了累了。</p>
+<h1 id="2、解决方案"><a href="#2、解决方案" class="headerlink" title="2、解决方案"></a>2、解决方案</h1><h2 id="2-1-创建图片资源文件夹"><a href="#2-1-创建图片资源文件夹" class="headerlink" title="2.1 创建图片资源文件夹"></a>2.1 创建图片资源文件夹</h2><p>网上有关的解决方式几乎很大一部分会提到这一点：将<code>_config.yml</code> 文件中的<code>post_asset_folder</code> 选项设为 <code>true</code> 来打开。事实上这正是hexo<a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">官方文档</a>给出的解决<strong>方案之一</strong>中的<strong>一个步骤</strong>。仔细阅读后会发现如下几点：</p>
+<ol>
+<li>该操作的作用就是在使用<code>hexo new xxx</code>指令新建博文时，在相同路径下同步创建一个<code>xxx</code>文件夹，而<code>xxx</code>文件夹的作用就是用来存放图片资源；</li>
+<li>就我个人而言，我偏好于直接在<code>source\_posts</code>文件夹下新建md文件，而不是通过<code>hexo new xxx</code>指令；</li>
+<li>那么直接新建<code>xxx.md</code>再新建<code>xxx</code>文件夹，这种操作的最终效果和使用<code>hexo new xxx</code>指令新建博文的效果一样吗？经过实测，是一样的。</li>
+</ol>
+<p>基于以上3点，告诉大家几个结论：</p>
+<ol>
+<li>新建博文可以不用<code>hexo new xxx</code>指令，我较为推荐直接新建文件和文件夹的方式，只要达到<strong>一个md文件，一个同名文件夹</strong>的效果即可；</li>
+<li>【将<code>_config.yml</code> 文件中的<code>post_asset_folder</code> 选项设为 <code>true</code> 】是<strong>必须</strong>的！理论上既然没用<code>hexo new xxx</code>指令，文件夹也是我自己新建的，这一步设置的意义似乎并不存在，但是后文介绍的插件必须在<code>post_asset_folder</code> 选项设为 <code>true</code>的情况下才能生效——<strong>本人亲测，大家记住这么设置即可</strong>！</li>
+</ol>
+<h2 id="2-2-typora中图像设置"><a href="#2-2-typora中图像设置" class="headerlink" title="2.2 typora中图像设置"></a>2.2 typora中图像设置</h2><p>一般来说，大家会现在typora里写好md格式的博客，然后通过<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>进行一下本地测试，确认无误后再发布到远端。</p>
+<p>暂且不说hexo博客的图片插入是个问题，我相信当初单纯利用typora做笔记时，图片文件的管理就让很多人头疼过，typora官方似乎也意识到这个问题，所以<code>偏好设置</code>中<code>图像</code>是专门的一项，提供了很多选择。</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png" alt="在这里插入图片描述"></p>
+<p>我相信大多数同学写md时的图片很多可能是直接截图或者在其他地方copy的，然后在typora中直接粘贴就ok了。但是这么做之前最好把typora插入图片时采取何种操作配置好，否则md文件和图片相隔十万八千里，后续一旦移动md文件图片就识别不出来，相信大家用过typora都深有体会。</p>
+<p>所以接下来讲一下typora如何设置。直接给结论：<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png" alt="在这里插入图片描述"></p>
+<p>框里的路径是：<code>./${filename}</code>。<code>./</code>表示当前文件夹，<code>${filename}</code>表示当前文件名。这么设置的好处：</p>
+<ol>
+<li>图片资源文件夹有了；</li>
+<li>而且是同名文件夹！（2.1中的文件夹其实不用手动添加了）</li>
+</ol>
+<p>这么设置的结果就是：想写篇博客，在<code>source\_posts</code>文件夹下新建<code>xxx.md</code>文件，写着写着需要插一张图，从别处复制，然后在typora中直接粘贴，<code>bling!</code>图片资源文件夹自动搞定，并不用关心什么文件夹，只管专注于<code>md</code>文件即可。</p>
+<h2 id="2-3-插件下载"><a href="#2-3-插件下载" class="headerlink" title="2.3 插件下载"></a>2.3 插件下载</h2><p>这个很多博客也有提到，插件的名字叫<code>hexo-asset-image</code>，相信在网上找了一波解决方案的同学一定对这个名字不陌生。</p>
+<p>这个插件的不同版本可能会有不同的影响，我最终成功解决问题的版本是用如下命令下载的：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https:<span class="comment">//github.com/CodeFalling/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
+<p>为什么需要这么插件呢？</p>
+<p>因为我们虽然在<code>source\_posts</code>文件夹下写了md文件，也有了图片资源文件夹存了图片，但从我们前面typora中的设置不难知道，实际上md文件中的图片路径都是相对路径（<code>./${filename}</code>）。而实际网上看到的博文显然不是md文件，而是html文件，从md到html的转变就是hexo帮我们做的，还记得<code>hexo g</code>命令吗？就是干这个的。转换后的html文件在<code>public</code>目录下，路径是通过日期指示的。</p>
+<p>下面第一张图是存放md文件的地方，图片就在图中的<code>jiangzhou</code>文件夹中；第二张图是generate之后存在html和图片资源的地方。<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png" alt="在这里插入图片描述"></p>
+<p>大家如果了解过html的话，应该知道里面的图片应该是指定绝对路径的，大家可以打开上面第二张图的<code>index.html</code>，找到插入图片的地方，查看是否是可用的绝对路径，我的如下图。大家如果问题还没解决的话应该不是像我一样的日期+文件夹指明的绝对路径。</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png" alt="在这里插入图片描述"></p>
+<p>说到这儿，大家应该知道，理论上需要<strong>将md中图片的相对路径转换成html中的绝对路径</strong>，这样图片才能正常显示。因为我们图片资源也有了，显示不出来只能是路径不对（为验证，大家图片显示不对的话，打开index.html，插图片地方的路径肯定是一串不明所以的字母数字）。</p>
+<p><strong>路径转换</strong>就是该节最开始提到的插件的作用：根据md图片的相对路径，给出html中图片的绝对路径。</p>
+<h2 id="2-4-修改md图片路径"><a href="#2-4-修改md图片路径" class="headerlink" title="2.4 修改md图片路径"></a>2.4 修改md图片路径</h2><p>经过前面typora的设置，大家粘贴图片到typora应该是这种画风：<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png" alt="在这里插入图片描述"></p>
+<p>路径：md文件名/图片名</p>
+<p>图片资源文件夹：自动生成且同名。</p>
+<p>这时如果用<code>hexo clean</code>、<code>hexo g</code>生成html文件，用Notepad++或其他工具打开index.html（路径见下方第一张图），找到插图片的地方，查看图片路径（见下方第一张图）：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png" alt="在这里插入图片描述"></p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png" alt="在这里插入图片描述"></p>
+<p>发现图片路径似乎多了一串<code>07/07/test</code>！如果用<code>hexo s</code>在本地查看网页，会发现是下面这个样子：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png" alt="在这里插入图片描述"></p>
+<p>点开那个未加载的图：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png" alt="在这里插入图片描述"></p>
+<p>继续点<code>The image</code>：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png" alt="在这里插入图片描述"></p>
+<p>可以发现这里显示的路径和我们在html文件源码中看到的是一致的，既然觉得路径重复，那么我们就把重复的删了试试看：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png" alt="在这里插入图片描述"></p>
+<p>图片显示出来了！</p>
+<p>既然是路径问题，那么是不是插件有问题？或者我们使用方法错了？</p>
+<p>找到插件安装位置（插件都在node_modules文件夹下），打开readme文件（怎么是1985年的？！<code>(*/ω＼*)</code>）</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png" alt="在这里插入图片描述"></p>
+<p>readme如下：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png" alt="在这里插入图片描述"></p>
+<p>瞬间发现别人的说明书讲得明明白白，言简意赅！我们的转化后路径不对正是因为我们md文件中图片的路径不对，图片名前面不能有其他东西！</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png" alt="在这里插入图片描述"></p>
+<p>删去<code>test/</code>（这样md中图片就没法正常显示了），重新<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>测试——</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png" alt="在这里插入图片描述"></p>
+<p>本地网页显示如下：</p>
+<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png" alt="在这里插入图片描述"></p>
+<p>发布到远端我这边也没什么问题，至此该问题算是解决了。主要就是编译（我姑且称之为编译，有点那个味道）前需要在md中把图片的路径都删去前面的<code>xxx/</code>，图片一多可能还是有些繁琐，但目前还没有找到更好的替代方法。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png" alt="在这里插入图片描述"></p>
+<p>找解决方案找了一个多小时，写这篇博客好像写了2个多小时。感觉应该把整个过程讲得还算比较清楚了。</p>
+<p>但是这种问题向来因人而异，同样的解决方法可能可以解决我的问题，但对另一个人无效。还是要多查找资料，多尝试，多思考。</p>
 
       
 
@@ -281,7 +333,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -337,7 +389,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/08/hexo_time/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -351,9 +403,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          hexo中插入pdf文件
+        
+      </div>
+    </a>
   
-    <a href="/2020/07/08/%E7%A0%94%E7%A9%B6%E7%94%9F%E5%85%A5%E5%AD%A6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">研究生入学</div>
+  
+    <a href="/2020/07/07/jiangzhou/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">江舟</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -380,7 +441,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方法"><span class="toc-number">2.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初期尝试"><span class="toc-number">2.1.</span> <span class="toc-text">初期尝试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最终设置"><span class="toc-number">2.2.</span> <span class="toc-text">最终设置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重要订正"><span class="toc-number">3.</span> <span class="toc-text">重要订正</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题"><span class="toc-number">4.</span> <span class="toc-text">问题</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1、前言"><span class="toc-number">1.</span> <span class="toc-text">1、前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2、解决方案"><span class="toc-number">2.</span> <span class="toc-text">2、解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-创建图片资源文件夹"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 创建图片资源文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-typora中图像设置"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 typora中图像设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-插件下载"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 插件下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-修改md图片路径"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 修改md图片路径</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#小结"><span class="toc-number">3.</span> <span class="toc-text">小结</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -530,11 +591,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">文字</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文字</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
