@@ -53,6 +53,34 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
       </tags>
   </entry>
   <entry>
+    <title>next主题改变文章字体大小</title>
+    <url>/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/</url>
+    <content><![CDATA[<p>对我来说next和yilia两个主题各有优劣：next排布看上去规整很多，但有时候就是太规整了让人觉得过于严肃，过于技术风，而且正文的默认字体、字号我不是很喜欢；yilia的字体和配色让我觉得更适合写文字，我很喜欢（话说yilia作者的文笔真的好好，他的文章读起来太舒服了，附上作者博客<a href="http://litten.me/" target="_blank" rel="noopener">地址</a>）。</p>
+<a id="more"></a>
+<p>next字体的修改可参考这篇<a href="https://leay.net/2020/02/14/hexo-next-font/#%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">博客</a>。在博客的yml文件里本来是直接有各个部分的字体字号修改的，但是我这边修改global可以生效，post无法生效。按照上面的博客，我把global字体改成了[思源宋体]，挺好看的。</p>
+<p>所以下面就是改字号的问题了。网上找了一圈没找到满意的解答，然后照着html源代码找了一圈，终于让我找到了自认为很方便的修改方法。</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>具体方法如下：</p>
+<p>1、找到<code>themes\next\layout\_macro</code>路径下的<code>post.swig</code>文件</p>
+<p><img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711103910355.png" width="600" style="zoom:80%;"></p>
+<p>2、找到<code>post body</code>部分</p>
+<p><img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711105121656.png" width="600"></p>
+<p>3、在div中加入字体大小样式<code>style=&quot;font-size:14px&quot;</code>，个人觉得14px大小看着挺舒服的。</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>图片方面，next比较好的地方就是他会自动帮你居中，看generate之后的html源码可以看到自动生成了<code>&lt;center&gt;&lt;/center&gt;</code>，但是：</p>
+<ol>
+<li><p>next会自动给图片加上标题，就是会把<code>alt=&quot;xxx&quot;</code>里面的内容放在图片下面。很多时候图片是截图的，名字都是imgxxxx一堆乱七八糟的，所以就得手动删掉。对比之下，删alt比加center还是方便一些。</p>
+</li>
+<li><p>有时候是不希望图片居中的<img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/05CC0954.gif" width="20">。比如这个图片在yilia主题下是会显示在文字中间的（下图是typora的显示效果），也是我想要的效果。next里面我没找到给图片加居中效果样式的地方，要是开放出来变成可以选择的就好了。</p>
+<p><img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711110440902.png" width="500"></p>
+</li>
+</ol>
+<p>next的确集成了很多东西，不用自己操心。最开始用yilia的时候很多功能都是照着网上一点点加的，这个过程有点麻烦，但还是有点小小的成就感。</p>
+<p>就这样~</p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>追番</title>
     <url>/2020/07/09/%E7%94%9F%E6%B4%BB/%E8%BF%BD%E7%95%AA/</url>
     <content><![CDATA[<p>沉迷追番无法自拔。</p>
@@ -78,7 +106,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   <entry>
     <title>CSS学习第一课</title>
     <url>/2020/07/09/%E6%95%99%E7%A8%8B/css/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文为CSS学习的第一课，参考资料为B站<code>狂神说Java</code>教学<a href="https://www.bilibili.com/video/BV1YJ411a7dy" target="_blank" rel="noopener">视频</a>。</p>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文为CSS学习的第一课（对应视频p1-p11），参考资料为B站<code>狂神说Java</code>教学<a href="https://www.bilibili.com/video/BV1YJ411a7dy" target="_blank" rel="noopener">视频</a>。</p>
 <a id="more"></a>
 <h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><p>由于本文主角为CSS，所以只介绍HTML的基本概念。</p>
 <ul>
