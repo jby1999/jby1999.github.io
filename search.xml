@@ -53,6 +53,27 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
       </tags>
   </entry>
   <entry>
+    <title>PSCAD4.6安装教程</title>
+    <url>/2020/07/12/%E6%95%99%E7%A8%8B/pscad4.6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>4.6比4.5简直好用不要太多！！！（虽然我觉得整个pscad比起simulink给人的感觉还是要难用好多~~）下面就给出4.6的安装链接及安装关键点。</p>
+<a id="more"></a>
+<h1 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h1><p>百度云链接：<a href="https://pan.baidu.com/s/1nKhOCmMOEvnU4yWyKCWAAw" target="_blank" rel="noopener">https://pan.baidu.com/s/1nKhOCmMOEvnU4yWyKCWAAw</a><br>提取码：0cjt</p>
+<p>安装包和教程都在里面了（链接失效可评论留言）。</p>
+<p>这位资源的分享者非常热心地录制了一个视频，照着来基本上没什么大问题。虽然我自己经历了几次重新卸载安装~~</p>
+<h1 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h1><h2 id="开启测试模式"><a href="#开启测试模式" class="headerlink" title="开启测试模式"></a>开启测试模式</h2><p>管理员身份运行命令行工具，运行<code>bcdedit /set testsigning on</code>即可。</p>
+<p>但我的win10直接运行是不成功的，需要进入电脑bios设置界面，手动把Secure Boot Policy这个安全启动选项调整为关闭状态。参考<a href="http://www.xitongcheng.com/jiaocheng/win10_article_43955.html" target="_blank" rel="noopener">链接</a>，这个网上一搜也一堆。</p>
+<p>如何进入bios呢？</p>
+<p>在电脑开机的时候，一直按ESC键，就会打开电脑的启动菜单，选择相应的菜单项就可以进入相应的功能，在启动菜单中按F10键可以进入BIOS。参考<a href="https://jingyan.baidu.com/article/e8cdb32b0b25de37052baded.html" target="_blank" rel="noopener">链接</a>。</p>
+<p>方法应该不止一种，我用的是上面的，具体方法网上一搜也一堆。</p>
+<p>这个是<strong>必须要</strong>的！！我第一次因为这个没开，破解工具里的驱动是装不了的！！</p>
+<h2 id="管理员身份运行"><a href="#管理员身份运行" class="headerlink" title="管理员身份运行"></a>管理员身份运行</h2><p>视频里提到了几处以管理员身份运行的地方，大家最好严格按照来操作即可。</p>
+<h2 id="license失效"><a href="#license失效" class="headerlink" title="license失效"></a>license失效</h2><p>貌似软件偶尔会提醒license失效，按照破解步骤重新操作一篇即可（驱动reinstall之类的，反正多点几遍rexxxx就对了），虽然有些麻烦，但毕竟自己是白嫖的。</p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>next主题改变文章字体大小</title>
     <url>/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/</url>
     <content><![CDATA[<p>对我来说next和yilia两个主题各有优劣：next排布看上去规整很多，但有时候就是太规整了让人觉得过于严肃，过于技术风，而且正文的默认字体、字号我不是很喜欢；yilia的字体和配色让我觉得更适合写文字，我很喜欢（话说yilia作者的文笔真的好好，他的文章读起来太舒服了，附上作者博客<a href="http://litten.me/" target="_blank" rel="noopener">地址</a>）。</p>
