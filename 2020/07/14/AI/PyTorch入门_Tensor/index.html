@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/fav.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jby1999.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="tensor和numpy差不多。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyTorch入门——Tensor">
+<meta property="og:url" content="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/index.html">
+<meta property="og:site_name" content="Boyou Jiang&#39;s Personal Website">
+<meta property="og:description" content="tensor和numpy差不多。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-14T08:45:45.000Z">
+<meta property="article:modified_time" content="2020-07-14T08:45:45.000Z">
+<meta property="article:author" content="Boyou Jiang">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="PyTorch">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>PyTorch入门——Tensor | Boyou Jiang's Personal Website</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Boyou Jiang's Personal Website</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-notes">
+
+    <a href="/Notes" rel="section"><i class="fa fa-book fa-fw"></i>Notes</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">12</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">4</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">17</span></a>
+
+  </li>
+        <li class="menu-item menu-item-album">
+
+    <a href="/album/" rel="section"><i class="fa fa-camera fa-fw"></i>Album</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/head.png">
+      <meta itemprop="name" content="Boyou Jiang">
+      <meta itemprop="description" content="Welcome to my website! Born in 1999, graduating from HUST SEEE, now I'm a PhD student majoring in Electrical Engineering at College of Electrical Engineering Zhejiang University.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Boyou Jiang's Personal Website">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PyTorch入门——Tensor
+        </h1>
+
+        <div class="post-meta">
+		  
+		  
+		  
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-07-14 16:45:45" itemprop="dateCreated datePublished" datetime="2020-07-14T16:45:45+08:00">2020-07-14</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.8k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>3 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div style="font-size:14px" class="post-body" itemprop="articleBody">
+
+      
+        <p>tensor和numpy差不多。</p>
+<a id="more"></a>
+<h1 id="pytorch的安装"><a href="#pytorch的安装" class="headerlink" title="pytorch的安装"></a>pytorch的安装</h1><p>去官网，可以直接生成相应的安装指令。</p>
+<p>使用之前：<code>import torch</code></p>
+<h1 id="Tensor"><a href="#Tensor" class="headerlink" title="Tensor"></a>Tensor</h1><p>就和numpy差不多。</p>
+<h2 id="Tensor的数据类型"><a href="#Tensor的数据类型" class="headerlink" title="Tensor的数据类型"></a>Tensor的数据类型</h2><ul>
+<li>torch.FloatTensor：用于生成数据类型为浮点型的Tensor， 传递给torch.FloatTensor的参数可以是一个列表， 也可以是维度值；</li>
+<li>torch.IntTensor：类型为整型，其他同上。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment"># 定义数据</span></span><br><span class="line">a=torch.FloatTensor(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">b=torch.FloatTensor([<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br><span class="line">c=torch.IntTensor(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">d=torch.IntTensor([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">5</span>,<span class="number">6</span>]]) <span class="comment"># 外面记得加中括号！！</span></span><br><span class="line">--</span><br><span class="line">tensor([[<span class="number">1.0653e-38</span>, <span class="number">1.0194e-38</span>, <span class="number">4.6838e-39</span>],</span><br><span class="line">        [<span class="number">8.4489e-39</span>, <span class="number">9.6429e-39</span>, <span class="number">8.4490e-39</span>]]) </span><br><span class="line"> tensor([<span class="number">2.</span>, <span class="number">3.</span>, <span class="number">4.</span>, <span class="number">5.</span>]) </span><br><span class="line"> tensor([[<span class="number">2053731104</span>,  <span class="number">706751589</span>, <span class="number">1852383276</span>],</span><br><span class="line">        [<span class="number">1679834996</span>, <span class="number">1701869940</span>, <span class="number">1852383276</span>]], dtype=torch.int32) </span><br><span class="line"> tensor([[<span class="number">1</span>, <span class="number">2</span>],</span><br><span class="line">        [<span class="number">5</span>, <span class="number">6</span>]], dtype=torch.int32)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>torch.rand：生成指定维度、浮点型、（0,1）区间均匀分布的随机Tensor</p>
+</li>
+<li><p>torch.randn：均值为0，方差为1的正态分布，其余同上</p>
+</li>
+<li>torch.range/arange：浮点型，用法——起始值、结束值、步长（默认步长为1）</li>
+<li>torch.zeros：浮点型、维数指定、元素值全为0</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">e=torch.rand(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">h=torch.randn(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="comment"># f=torch.range(1,5) range已经不推荐使用了，改用arange，用法一样</span></span><br><span class="line">f=torch.arange(<span class="number">1</span>, <span class="number">10</span>, <span class="number">3</span>)</span><br><span class="line">g=torch.zeros(<span class="number">5</span>,<span class="number">1</span>)</span><br><span class="line">i=torch.zeros(<span class="number">5</span>)</span><br><span class="line">print(e,<span class="string">'\n'</span>,h,<span class="string">'\n'</span>,f,<span class="string">'\n'</span>,g,<span class="string">'\n'</span>,i)</span><br><span class="line">--</span><br><span class="line">tensor([[<span class="number">0.3318</span>, <span class="number">0.9726</span>, <span class="number">0.3340</span>],</span><br><span class="line">        [<span class="number">0.6438</span>, <span class="number">0.9575</span>, <span class="number">0.0098</span>]]) </span><br><span class="line"> tensor([[ <span class="number">1.4218</span>,  <span class="number">1.5817</span>, <span class="number">-0.5466</span>],</span><br><span class="line">        [ <span class="number">0.8966</span>,  <span class="number">1.1906</span>,  <span class="number">0.3872</span>]]) </span><br><span class="line"> tensor([<span class="number">1</span>, <span class="number">4</span>, <span class="number">7</span>]) </span><br><span class="line"> tensor([[<span class="number">0.</span>],</span><br><span class="line">        [<span class="number">0.</span>],</span><br><span class="line">        [<span class="number">0.</span>],</span><br><span class="line">        [<span class="number">0.</span>],</span><br><span class="line">        [<span class="number">0.</span>]]) </span><br><span class="line"> tensor([<span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>])</span><br></pre></td></tr></table></figure>
+<h2 id="Tensor的运算"><a href="#Tensor的运算" class="headerlink" title="Tensor的运算"></a>Tensor的运算</h2><p>也和numpy几乎一样。</p>
+<ul>
+<li>torch.abs：输入参数必须是一个Tensor数据类型的变量 ，返回绝对值</li>
+<li>torch.add：输入可以是Tensor和Tensor，也可以是Tensor和标量</li>
+<li>torch.clamp：输入参数包括待裁剪的Tensor数据类型的变量、裁剪的上边界和裁剪的下边界；如果元素的值小于裁剪的下边界的值，该元素就被重写成裁剪的下边界的值；同理，如果元素的值大于裁剪的上边界的值，该元素就被重写成裁剪的上边界的值</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">a = torch.randn(<span class="number">2</span>, <span class="number">3</span>)  <span class="comment"># 官方推荐赋值等运算符前后加上空格，行内注释，注释符前面空两格，后面空一格再写注释内容</span></span><br><span class="line">print(a)</span><br><span class="line">print(a.clamp(<span class="number">-0.5</span>))</span><br><span class="line">print(a.clamp(min=<span class="number">-0.5</span>))</span><br><span class="line">print(a.clamp(max=<span class="number">0.5</span>))  <span class="comment"># 是可以通过这种方式来单独指定一个的！感觉好方便</span></span><br><span class="line">print(a.clamp(<span class="number">-0.5</span>, <span class="number">0.5</span>))</span><br><span class="line">---</span><br><span class="line">tensor([[ <span class="number">2.1158</span>, <span class="number">-1.0146</span>, <span class="number">-1.0519</span>],</span><br><span class="line">        [<span class="number">-2.0282</span>, <span class="number">-0.1845</span>,  <span class="number">0.7459</span>]])</span><br><span class="line">tensor([[ <span class="number">2.1158</span>, <span class="number">-0.5000</span>, <span class="number">-0.5000</span>],</span><br><span class="line">        [<span class="number">-0.5000</span>, <span class="number">-0.1845</span>,  <span class="number">0.7459</span>]])</span><br><span class="line">tensor([[ <span class="number">2.1158</span>, <span class="number">-0.5000</span>, <span class="number">-0.5000</span>],</span><br><span class="line">        [<span class="number">-0.5000</span>, <span class="number">-0.1845</span>,  <span class="number">0.7459</span>]])</span><br><span class="line">tensor([[ <span class="number">0.5000</span>, <span class="number">-1.0146</span>, <span class="number">-1.0519</span>],</span><br><span class="line">        [<span class="number">-2.0282</span>, <span class="number">-0.1845</span>,  <span class="number">0.5000</span>]])</span><br><span class="line">tensor([[ <span class="number">0.5000</span>, <span class="number">-0.5000</span>, <span class="number">-0.5000</span>],</span><br><span class="line">        [<span class="number">-0.5000</span>, <span class="number">-0.1845</span>,  <span class="number">0.5000</span>]])</span><br></pre></td></tr></table></figure>
+<ul>
+<li>torch.div：除法</li>
+<li>torch.mul：乘法</li>
+<li>torch.pow：求幂</li>
+</ul>
+<p>参与上面三个运算的两个主体可以都是Tensor类型变量，也可以Tensor和标量，和matlab的运算方法一致。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">e=torch.rand(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">f=torch.rand(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">g=torch.rand(<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line">print(e,<span class="string">'\n'</span>,f,<span class="string">'\n'</span>,g)</span><br><span class="line">print(e.pow(f))</span><br><span class="line">print(e.pow(g))</span><br><span class="line"><span class="comment"># print(3.pow(2)) 直接这样子是会报错的</span></span><br><span class="line"><span class="comment"># print(torch.pow(3,2)) 这样也不行，必须有Tensor参与其中，如果只是常数运算，用普通的math包就可以了</span></span><br><span class="line">---</span><br><span class="line">tensor([[<span class="number">0.1342</span>, <span class="number">0.3514</span>, <span class="number">0.5444</span>],</span><br><span class="line">        [<span class="number">0.3213</span>, <span class="number">0.8190</span>, <span class="number">0.7505</span>]]) </span><br><span class="line"> tensor([[<span class="number">0.0562</span>, <span class="number">0.9394</span>, <span class="number">0.8471</span>],</span><br><span class="line">        [<span class="number">0.3373</span>, <span class="number">0.9015</span>, <span class="number">0.8062</span>]]) </span><br><span class="line"> tensor([[<span class="number">0.9882</span>, <span class="number">0.6073</span>, <span class="number">0.6899</span>]])</span><br><span class="line">tensor([[<span class="number">0.8933</span>, <span class="number">0.3743</span>, <span class="number">0.5975</span>],</span><br><span class="line">        [<span class="number">0.6819</span>, <span class="number">0.8353</span>, <span class="number">0.7934</span>]])</span><br><span class="line">tensor([[<span class="number">0.1374</span>, <span class="number">0.5299</span>, <span class="number">0.6574</span>],</span><br><span class="line">        [<span class="number">0.3256</span>, <span class="number">0.8858</span>, <span class="number">0.8204</span>]])</span><br></pre></td></tr></table></figure>
+<ul>
+<li>torch.mm：运用矩阵之间的乘法规则进行计算</li>
+<li>torch.mv：运用矩阵与向量之间的乘法规则进行计算，被传入的参数中的第1个参数代表矩阵，第2个参数代表向量，顺序不能颠倒</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">a=torch.rand(<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line">b=torch.rand(<span class="number">3</span>,<span class="number">1</span>)</span><br><span class="line">d=torch.rand(<span class="number">3</span>)</span><br><span class="line">c=torch.mm(a,b)</span><br><span class="line">print(c)</span><br><span class="line"><span class="comment"># print(a.mv(b)) 报错，两个都是矩阵，不满足矩阵和向量的要求</span></span><br><span class="line">print(a.mv(d))</span><br><span class="line">print(b,<span class="string">'\n'</span>,d)<span class="comment"># 注意二者区别——一个是矩阵，一个是向量（从中括号可以看出来）</span></span><br><span class="line">---</span><br><span class="line">tensor([[<span class="number">0.9265</span>]])</span><br><span class="line">tensor([<span class="number">0.1591</span>])</span><br><span class="line">tensor([[<span class="number">0.6617</span>],</span><br><span class="line">        [<span class="number">0.4398</span>],</span><br><span class="line">        [<span class="number">0.3797</span>]]) </span><br><span class="line"> tensor([<span class="number">0.1102</span>, <span class="number">0.0286</span>, <span class="number">0.2890</span>])</span><br></pre></td></tr></table></figure>
+<p>这里矩阵和向量还是分得比较细的，不能像matlab那么随便了~</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Boyou Jiang
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/" title="PyTorch入门——Tensor">http://jby1999.github.io/2020/07/14/AI/PyTorch入门_Tensor/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AI/" rel="tag"># AI</a>
+              <a href="/tags/PyTorch/" rel="tag"># PyTorch</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_%E7%BB%B4%E5%BA%A6/" rel="prev" title="PyTorch入门——数组维度及squeeze、unsqueeze">
+      <i class="fa fa-chevron-left"></i> PyTorch入门——数组维度及squeeze、unsqueeze
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/14/AI/MatplotLib/" rel="next" title="python绘图——matplotlib">
+      python绘图——matplotlib <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#pytorch的安装"><span class="nav-number">1.</span> <span class="nav-text">pytorch的安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Tensor"><span class="nav-number">2.</span> <span class="nav-text">Tensor</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Tensor的数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">Tensor的数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tensor的运算"><span class="nav-number">2.2.</span> <span class="nav-text">Tensor的运算</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Boyou Jiang"
+      src="/images/head.png">
+  <p class="site-author-name" itemprop="name">Boyou Jiang</p>
+  <div class="site-description" itemprop="description">Welcome to my website! Born in 1999, graduating from HUST SEEE, now I'm a PhD student majoring in Electrical Engineering at College of Electrical Engineering Zhejiang University.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jby1999" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jby1999" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:boyou1999@foxmail.com" title="E-Mail → mailto:boyou1999@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/images/weixin.jpg" title="Weixin → &#x2F;images&#x2F;weixin.jpg"><i class="fab fa-weixin fa-fw"></i>Weixin</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/images/qq.jpg" title="qq&#x2F;Tim → &#x2F;images&#x2F;qq.jpg"><i class="fab fa-qq fa-fw"></i>qq/Tim</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Related Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://ceee.hust.edu.cn/" title="http:&#x2F;&#x2F;ceee.hust.edu.cn&#x2F;" rel="noopener" target="_blank">HUST SEEE</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://ee.zju.edu.cn/" title="http:&#x2F;&#x2F;ee.zju.edu.cn&#x2F;" rel="noopener" target="_blank">ZJU CEE</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" title="https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;Xplore&#x2F;home.jsp" rel="noopener" target="_blank">IEEE Xplore</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Boyou Jiang</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'EeuNT4SmTuGnSwJkOhGyt2NH-gzGzoHsz',
+      appKey     : '0OUAC6p8y5hiwVXl3G2dgTwG',
+      placeholder: "Looking forward to your comments.",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
