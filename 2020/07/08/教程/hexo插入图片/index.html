@@ -5,56 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/fav.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/boyou1999.gitee.io/images/fav.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/boyou1999.gitee.io/images/fav.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/boyou1999.gitee.io/images/fav.png">
+  <link rel="mask-icon" href="/boyou1999.gitee.io/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/boyou1999.gitee.io/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/boyou1999.gitee.io/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"jby1999.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"boyou1999.gitee.io","root":"/boyou1999.gitee.io/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="1、前言今天晚上花了大概1个小时在晚上搜寻各种hexo博客插入图片无法显示的解决办法，很多方法是重叠的，所以真正不同的解决方法并不多。 尤其让我有些惊讶的是不同的几篇博客，内容根本完全一样，就是纯粹的copy，虽然说明了转载（注明转载的话往往还放在最后一句，这种东西不应该开篇说明最好吗？），但是我觉得直接给出链接不就可以了吗？为何还要完全从头到尾copy一遍？而且多少加上一些自己的理解，稍微修缮一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客插入图片失败解决方法">
-<meta property="og:url" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/index.html">
+<meta property="og:url" content="http://boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/index.html">
 <meta property="og:site_name" content="Boyou Jiang&#39;s Personal Website">
 <meta property="og:description" content="1、前言今天晚上花了大概1个小时在晚上搜寻各种hexo博客插入图片无法显示的解决办法，很多方法是重叠的，所以真正不同的解决方法并不多。 尤其让我有些惊讶的是不同的几篇博客，内容根本完全一样，就是纯粹的copy，虽然说明了转载（注明转载的话往往还放在最后一句，这种东西不应该开篇说明最好吗？），但是我觉得直接给出链接不就可以了吗？为何还要完全从头到尾copy一遍？而且多少加上一些自己的理解，稍微修缮一">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png">
 <meta property="article:published_time" content="2020-07-07T16:18:55.000Z">
 <meta property="article:modified_time" content="2020-07-07T16:18:55.000Z">
 <meta property="article:author" content="Boyou Jiang">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png">
+<meta name="twitter:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png">
 
-<link rel="canonical" href="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">
+<link rel="canonical" href="http://boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">
 
 
 <script id="page-configurations">
@@ -116,7 +116,7 @@
 
   <div class="site-meta">
 
-    <a href="/" class="brand" rel="start">
+    <a href="/boyou1999.gitee.io/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <h1 class="site-title">Boyou Jiang's Personal Website</h1>
       <span class="logo-line-after"><i></i></span>
@@ -137,37 +137,37 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/boyou1999.gitee.io/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+    <a href="/boyou1999.gitee.io/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
 
   </li>
         <li class="menu-item menu-item-notes">
 
-    <a href="/Notes" rel="section"><i class="fa fa-book fa-fw"></i>Notes</a>
+    <a href="/boyou1999.gitee.io/Notes" rel="section"><i class="fa fa-book fa-fw"></i>Notes</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">14</span></a>
+    <a href="/boyou1999.gitee.io/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">14</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">4</span></a>
+    <a href="/boyou1999.gitee.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">18</span></a>
+    <a href="/boyou1999.gitee.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">18</span></a>
 
   </li>
         <li class="menu-item menu-item-album">
 
-    <a href="/album/" rel="section"><i class="fa fa-camera fa-fw"></i>Album</a>
+    <a href="/boyou1999.gitee.io/album/" rel="section"><i class="fa fa-camera fa-fw"></i>Album</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -226,10 +226,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">
+    <link itemprop="mainEntityOfPage" href="http://boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.png">
+      <meta itemprop="image" content="/boyou1999.gitee.io/images/head.png">
       <meta itemprop="name" content="Boyou Jiang">
       <meta itemprop="description" content="Welcome to my website! Born in 1999, graduating from HUST SEEE, now I'm a PhD student majoring in Electrical Engineering at College of Electrical Engineering Zhejiang University.">
     </span>
@@ -271,8 +271,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" itemprop="commentCount"></span>
+    <a title="valine" href="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -318,9 +318,9 @@
 </ol>
 <h2 id="2-2-typora中图像设置"><a href="#2-2-typora中图像设置" class="headerlink" title="2.2 typora中图像设置"></a>2.2 typora中图像设置</h2><p>一般来说，大家会现在typora里写好md格式的博客，然后通过<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>进行一下本地测试，确认无误后再发布到远端。</p>
 <p>暂且不说hexo博客的图片插入是个问题，我相信当初单纯利用typora做笔记时，图片文件的管理就让很多人头疼过，typora官方似乎也意识到这个问题，所以<code>偏好设置</code>中<code>图像</code>是专门的一项，提供了很多选择。</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png" alt="在这里插入图片描述"></p>
 <p>我相信大多数同学写md时的图片很多可能是直接截图或者在其他地方copy的，然后在typora中直接粘贴就ok了。但是这么做之前最好把typora插入图片时采取何种操作配置好，否则md文件和图片相隔十万八千里，后续一旦移动md文件图片就识别不出来，相信大家用过typora都深有体会。</p>
-<p>所以接下来讲一下typora如何设置。直接给结论：<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png" alt="在这里插入图片描述"></p>
+<p>所以接下来讲一下typora如何设置。直接给结论：<br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png" alt="在这里插入图片描述"></p>
 <p>框里的路径是：<code>./${filename}</code>。<code>./</code>表示当前文件夹，<code>${filename}</code>表示当前文件名。这么设置的好处：</p>
 <ol>
 <li>图片资源文件夹有了；</li>
@@ -332,39 +332,39 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https:<span class="comment">//github.com/CodeFalling/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
 <p>为什么需要这么插件呢？</p>
 <p>因为我们虽然在<code>source\_posts</code>文件夹下写了md文件，也有了图片资源文件夹存了图片，但从我们前面typora中的设置不难知道，实际上md文件中的图片路径都是相对路径（<code>./${filename}</code>）。而实际网上看到的博文显然不是md文件，而是html文件，从md到html的转变就是hexo帮我们做的，还记得<code>hexo g</code>命令吗？就是干这个的。转换后的html文件在<code>public</code>目录下，路径是通过日期指示的。</p>
-<p>下面第一张图是存放md文件的地方，图片就在图中的<code>jiangzhou</code>文件夹中；第二张图是generate之后存在html和图片资源的地方。<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png" alt="在这里插入图片描述"></p>
+<p>下面第一张图是存放md文件的地方，图片就在图中的<code>jiangzhou</code>文件夹中；第二张图是generate之后存在html和图片资源的地方。<br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png" alt="在这里插入图片描述"><br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png" alt="在这里插入图片描述"></p>
 <p>大家如果了解过html的话，应该知道里面的图片应该是指定绝对路径的，大家可以打开上面第二张图的<code>index.html</code>，找到插入图片的地方，查看是否是可用的绝对路径，我的如下图。大家如果问题还没解决的话应该不是像我一样的日期+文件夹指明的绝对路径。</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png" alt="在这里插入图片描述"></p>
 <p>说到这儿，大家应该知道，理论上需要<strong>将md中图片的相对路径转换成html中的绝对路径</strong>，这样图片才能正常显示。因为我们图片资源也有了，显示不出来只能是路径不对（为验证，大家图片显示不对的话，打开index.html，插图片地方的路径肯定是一串不明所以的字母数字）。</p>
 <p><strong>路径转换</strong>就是该节最开始提到的插件的作用：根据md图片的相对路径，给出html中图片的绝对路径。</p>
-<h2 id="2-4-修改md图片路径"><a href="#2-4-修改md图片路径" class="headerlink" title="2.4 修改md图片路径"></a>2.4 修改md图片路径</h2><p>经过前面typora的设置，大家粘贴图片到typora应该是这种画风：<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png" alt="在这里插入图片描述"></p>
+<h2 id="2-4-修改md图片路径"><a href="#2-4-修改md图片路径" class="headerlink" title="2.4 修改md图片路径"></a>2.4 修改md图片路径</h2><p>经过前面typora的设置，大家粘贴图片到typora应该是这种画风：<br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png" alt="在这里插入图片描述"><br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png" alt="在这里插入图片描述"></p>
 <p>路径：md文件名/图片名</p>
 <p>图片资源文件夹：自动生成且同名。</p>
 <p>这时如果用<code>hexo clean</code>、<code>hexo g</code>生成html文件，用Notepad++或其他工具打开index.html（路径见下方第一张图），找到插图片的地方，查看图片路径（见下方第一张图）：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png" alt="在这里插入图片描述"></p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png" alt="在这里插入图片描述"></p>
 <p>发现图片路径似乎多了一串<code>07/07/test</code>！如果用<code>hexo s</code>在本地查看网页，会发现是下面这个样子：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png" alt="在这里插入图片描述"></p>
 <p>点开那个未加载的图：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png" alt="在这里插入图片描述"></p>
 <p>继续点<code>The image</code>：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png" alt="在这里插入图片描述"></p>
 <p>可以发现这里显示的路径和我们在html文件源码中看到的是一致的，既然觉得路径重复，那么我们就把重复的删了试试看：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png" alt="在这里插入图片描述"></p>
 <p>图片显示出来了！</p>
 <p>既然是路径问题，那么是不是插件有问题？或者我们使用方法错了？</p>
 <p>找到插件安装位置（插件都在node_modules文件夹下），打开readme文件（怎么是1985年的？！<code>(*/ω＼*)</code>）</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png" alt="在这里插入图片描述"></p>
 <p>readme如下：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png" alt="在这里插入图片描述"></p>
 <p>瞬间发现别人的说明书讲得明明白白，言简意赅！我们的转化后路径不对正是因为我们md文件中图片的路径不对，图片名前面不能有其他东西！</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png" alt="在这里插入图片描述"></p>
 <p>删去<code>test/</code>（这样md中图片就没法正常显示了），重新<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>测试——</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png" alt="在这里插入图片描述"></p>
 <p>本地网页显示如下：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png" alt="在这里插入图片描述"></p>
 <p>发布到远端我这边也没什么问题，至此该问题算是解决了。主要就是编译（我姑且称之为编译，有点那个味道）前需要在md中把图片的路径都删去前面的<code>xxx/</code>，图片一多可能还是有些繁琐，但目前还没有找到更好的替代方法。</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png" alt="在这里插入图片描述"></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png" alt="在这里插入图片描述"></p>
 <p>找解决方案找了一个多小时，写这篇博客好像写了2个多小时。感觉应该把整个过程讲得还算比较清楚了。</p>
 <p>但是这种问题向来因人而异，同样的解决方法可能可以解决我的问题，但对另一个人无效。还是要多查找资料，多尝试，多思考。</p>
 
@@ -382,7 +382,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" title="hexo博客插入图片失败解决方法">http://jby1999.github.io/2020/07/08/教程/hexo插入图片/</a>
+    <a href="http://boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" title="hexo博客插入图片失败解决方法">http://boyou1999.gitee.io/2020/07/08/教程/hexo插入图片/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -393,7 +393,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/boyou1999.gitee.io/tags/hexo/" rel="tag"># hexo</a>
           </div>
 
         
@@ -402,11 +402,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/07/jiangzhou/" rel="prev" title="江舟">
+    <a href="/boyou1999.gitee.io/2020/07/07/jiangzhou/" rel="prev" title="江舟">
       <i class="fa fa-chevron-left"></i> 江舟
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/" rel="next" title="hexo中插入pdf文件">
+    <a href="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/" rel="next" title="hexo中插入pdf文件">
       hexo中插入pdf文件 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -475,27 +475,27 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Boyou Jiang"
-      src="/images/head.png">
+      src="/boyou1999.gitee.io/images/head.png">
   <p class="site-author-name" itemprop="name">Boyou Jiang</p>
   <div class="site-description" itemprop="description">Welcome to my website! Born in 1999, graduating from HUST SEEE, now I'm a PhD student majoring in Electrical Engineering at College of Electrical Engineering Zhejiang University.</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
+          <a href="/boyou1999.gitee.io/archives/">
         
           <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-            <a href="/categories/">
+            <a href="/boyou1999.gitee.io/categories/">
           
         <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+            <a href="/boyou1999.gitee.io/tags/">
           
         <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">tags</span></a>
@@ -510,10 +510,10 @@
         <a href="mailto:boyou1999@foxmail.com" title="E-Mail → mailto:boyou1999@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
-        <a href="/images/weixin.jpg" title="Weixin → &#x2F;images&#x2F;weixin.jpg"><i class="fab fa-weixin fa-fw"></i>Weixin</a>
+        <a href="/boyou1999.gitee.io/images/weixin.jpg" title="Weixin → &#x2F;images&#x2F;weixin.jpg"><i class="fab fa-weixin fa-fw"></i>Weixin</a>
       </span>
       <span class="links-of-author-item">
-        <a href="/images/qq.jpg" title="qq&#x2F;Tim → &#x2F;images&#x2F;qq.jpg"><i class="fab fa-qq fa-fw"></i>qq/Tim</a>
+        <a href="/boyou1999.gitee.io/images/qq.jpg" title="qq&#x2F;Tim → &#x2F;images&#x2F;qq.jpg"><i class="fab fa-qq fa-fw"></i>qq/Tim</a>
       </span>
   </div>
 
@@ -595,32 +595,32 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="/boyou1999.gitee.io/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="/boyou1999.gitee.io/lib/velocity/velocity.min.js"></script>
+  <script src="/boyou1999.gitee.io/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/js/utils.js"></script>
+<script src="/boyou1999.gitee.io/js/utils.js"></script>
 
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
+<script src="/boyou1999.gitee.io/js/motion.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+<script src="/boyou1999.gitee.io/js/schemes/pisces.js"></script>
 
 
-
-
-  
+<script src="/boyou1999.gitee.io/js/next-boot.js"></script>
 
 
 
 
   
-<script src="/js/local-search.js"></script>
+
+
+
+
+  
+<script src="/boyou1999.gitee.io/js/local-search.js"></script>
 
 
 

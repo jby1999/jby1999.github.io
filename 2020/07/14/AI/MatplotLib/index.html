@@ -5,47 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/fav.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/boyou1999.gitee.io/images/fav.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/boyou1999.gitee.io/images/fav.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/boyou1999.gitee.io/images/fav.png">
+  <link rel="mask-icon" href="/boyou1999.gitee.io/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/boyou1999.gitee.io/css/main.css">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/boyou1999.gitee.io/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"jby1999.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"boyou1999.gitee.io","root":"/boyou1999.gitee.io/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="python绘图——线型图、散点图、直方图、饼图。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python绘图——matplotlib">
-<meta property="og:url" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/index.html">
+<meta property="og:url" content="http://boyou1999.gitee.io/2020/07/14/AI/MatplotLib/index.html">
 <meta property="og:site_name" content="Boyou Jiang&#39;s Personal Website">
 <meta property="og:description" content="python绘图——线型图、散点图、直方图、饼图。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_1.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_2.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_3.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_4.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_5.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_6.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_7.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_8.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_9.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_1.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_2.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_3.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_4.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_5.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_6.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_7.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_8.png">
+<meta property="og:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_9.png">
 <meta property="article:published_time" content="2020-07-14T11:47:59.000Z">
 <meta property="article:modified_time" content="2020-07-14T11:47:59.000Z">
 <meta property="article:author" content="Boyou Jiang">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="matplotlib">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jby1999.github.io/2020/07/14/AI/MatplotLib/Figure_1.png">
+<meta name="twitter:image" content="http://boyou1999.gitee.io/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_1.png">
 
-<link rel="canonical" href="http://jby1999.github.io/2020/07/14/AI/MatplotLib/">
+<link rel="canonical" href="http://boyou1999.gitee.io/2020/07/14/AI/MatplotLib/">
 
 
 <script id="page-configurations">
@@ -107,7 +107,7 @@
 
   <div class="site-meta">
 
-    <a href="/" class="brand" rel="start">
+    <a href="/boyou1999.gitee.io/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <h1 class="site-title">Boyou Jiang's Personal Website</h1>
       <span class="logo-line-after"><i></i></span>
@@ -128,37 +128,37 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/boyou1999.gitee.io/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+    <a href="/boyou1999.gitee.io/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
 
   </li>
         <li class="menu-item menu-item-notes">
 
-    <a href="/Notes" rel="section"><i class="fa fa-book fa-fw"></i>Notes</a>
+    <a href="/boyou1999.gitee.io/Notes" rel="section"><i class="fa fa-book fa-fw"></i>Notes</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">14</span></a>
+    <a href="/boyou1999.gitee.io/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">14</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">4</span></a>
+    <a href="/boyou1999.gitee.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">18</span></a>
+    <a href="/boyou1999.gitee.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">18</span></a>
 
   </li>
         <li class="menu-item menu-item-album">
 
-    <a href="/album/" rel="section"><i class="fa fa-camera fa-fw"></i>Album</a>
+    <a href="/boyou1999.gitee.io/album/" rel="section"><i class="fa fa-camera fa-fw"></i>Album</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -217,10 +217,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://jby1999.github.io/2020/07/14/AI/MatplotLib/">
+    <link itemprop="mainEntityOfPage" href="http://boyou1999.gitee.io/2020/07/14/AI/MatplotLib/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.png">
+      <meta itemprop="image" content="/boyou1999.gitee.io/images/head.png">
       <meta itemprop="name" content="Boyou Jiang">
       <meta itemprop="description" content="Welcome to my website! Born in 1999, graduating from HUST SEEE, now I'm a PhD student majoring in Electrical Engineering at College of Electrical Engineering Zhejiang University.">
     </span>
@@ -251,7 +251,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
+                  <a href="/boyou1999.gitee.io/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
                 </span>
             </span>
 
@@ -271,8 +271,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2020/07/14/AI/MatplotLib/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/14/AI/MatplotLib/" itemprop="commentCount"></span>
+    <a title="valine" href="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -314,8 +314,8 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.plot(x, y)</span><br><span class="line">plt.scatter(x, y)</span><br></pre></td></tr></table></figure>
 <p>除了带了个前缀，和matlab里绘图也没啥差别。</p>
 <h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">1</span></span><br><span class="line">b=<span class="number">0</span></span><br><span class="line">x = torch.linspace(<span class="number">-1</span>, <span class="number">1</span>, <span class="number">100</span>)</span><br><span class="line">y = a*x.pow(<span class="number">2</span>)+b+<span class="number">0.1</span>*torch.rand(x.size())</span><br><span class="line">plt.scatter(x, y)  <span class="comment"># 待拟合数据</span></span><br><span class="line">plt.plot(x, y)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_1.png" width="500"></p>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_2.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_1.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_2.png" width="500"></p>
 <h2 id="丰富图像"><a href="#丰富图像" class="headerlink" title="丰富图像"></a>丰富图像</h2><h3 id="线型图"><a href="#线型图" class="headerlink" title="线型图"></a>线型图</h3><p><code>plt.plot(x, y, &quot;r--o&quot;)</code></p>
 <h4 id="线条颜色"><a href="#线条颜色" class="headerlink" title="线条颜色"></a>线条颜色</h4><ol>
 <li><p>“b”：指定绘制的线条颜色为蓝色。</p>
@@ -352,15 +352,15 @@
 <li><code>:</code>：指定线条形状为点线。 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = torch.randn(<span class="number">30</span>)</span><br><span class="line">y = torch.randn(<span class="number">30</span>)</span><br><span class="line">plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">plt.plot(y, <span class="string">'b:o'</span>)  <span class="comment"># python默认画在同一张图中</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_3.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_3.png" width="500"></p>
 <p>这个输出的图片质量确实比matlab要好。</p>
 <h4 id="标签和图例"><a href="#标签和图例" class="headerlink" title="标签和图例"></a>标签和图例</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x = torch.randn(<span class="number">30</span>)</span><br><span class="line">y = torch.randn(<span class="number">30</span>)</span><br><span class="line">p1, = plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">p2, = plt.plot(y, <span class="string">'b:o'</span>)  <span class="comment"># 为了使用图例必须给每个绘图加上名字（matlab里是不是叫句柄？），而且名字后面得加一个英文逗号","</span></span><br><span class="line">plt.title(<span class="string">"test"</span>)  <span class="comment"># 图名</span></span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)  <span class="comment"># </span></span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)  <span class="comment"># x、y轴标签</span></span><br><span class="line">plt.legend([p1, p2], [<span class="string">"x"</span>, <span class="string">"y"</span>])  <span class="comment"># 图例</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_4.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_4.png" width="500"></p>
 <h4 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plt.figure()  <span class="comment"># 先用这个定义一个实例（就像matlab里的figure）</span></span><br><span class="line">plt.subplot(<span class="number">121</span>)  <span class="comment"># 第1张子图</span></span><br><span class="line">p1, = plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">plt.subplot(<span class="number">122</span>)  <span class="comment"># 第2张子图</span></span><br><span class="line">p2, = plt.plot(y, <span class="string">'b:o'</span>)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_5.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_5.png" width="500"></p>
 <p>也可以加上分别加上标签等：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">plt.figure()  <span class="comment"># 先用这个定义一个实例（就像matlab里的figure）</span></span><br><span class="line">plt.subplot(<span class="number">121</span>)  <span class="comment"># 第1张子图</span></span><br><span class="line">p1, = plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">plt.title(<span class="string">"subplot1"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)  <span class="comment"># 位置放前放后都可以</span></span><br><span class="line">plt.subplot(<span class="number">122</span>)  <span class="comment"># 第2张子图</span></span><br><span class="line">p2, = plt.plot(y, <span class="string">'b:o'</span>)</span><br><span class="line">plt.title(<span class="string">"subplot2"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)  <span class="comment"># 位置放前放后都可以</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_6.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_6.png" width="500"></p>
 <p>不过好像有点错位~</p>
 <h3 id="散点图"><a href="#散点图" class="headerlink" title="散点图"></a>散点图</h3><p>和线形图有几点区别：</p>
 <ul>
@@ -368,7 +368,7 @@
 <li>丰富图像也不能在后面直接用<code>“xxx”</code>，必须挨个儿指定，具体见下文。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plt.scatter(x, y, c=<span class="string">'r'</span>, marker=<span class="string">'o'</span>, label=<span class="string">"(x,y)"</span>) </span><br><span class="line">plt.title(<span class="string">"scatter"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)</span><br><span class="line">plt.legend(loc=<span class="number">2</span>)  <span class="comment"># 指定图例的位置</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_7.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_7.png" width="500"></p>
 <ul>
 <li><code>c</code>——点的颜色</li>
 <li><code>marker</code>——点的形状</li>
@@ -388,9 +388,9 @@
 <li><code>bins=30</code>，指定条纹数，默认是10</li>
 <li><code>color</code>，指定条纹颜色</li>
 </ul>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_8.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_8.png" width="500"></p>
 <h1 id="饼图"><a href="#饼图" class="headerlink" title="饼图"></a>饼图</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">labels = [<span class="string">"Dogs"</span>, <span class="string">"Cats"</span>, <span class="string">"Birds"</span>]</span><br><span class="line">sizes = [<span class="number">30</span>, <span class="number">40</span>, <span class="number">30</span>]</span><br><span class="line">plt.pie(sizes, explode=(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>), labels=labels, autopct=<span class="string">'%1.1f%%'</span>, startangle=<span class="number">90</span>)</span><br><span class="line">plt.axis(<span class="string">'equal'</span>)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_9.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_9.png" width="500"></p>
 <p>说明：</p>
 <ul>
 <li><code>sizes= [15, 50, 35]</code>的三个数字确定了每部分数据系列在整个圆形中的占比；</li>
@@ -418,7 +418,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://jby1999.github.io/2020/07/14/AI/MatplotLib/" title="python绘图——matplotlib">http://jby1999.github.io/2020/07/14/AI/MatplotLib/</a>
+    <a href="http://boyou1999.gitee.io/2020/07/14/AI/MatplotLib/" title="python绘图——matplotlib">http://boyou1999.gitee.io/2020/07/14/AI/MatplotLib/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -429,8 +429,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/python/" rel="tag"># python</a>
-              <a href="/tags/matplotlib/" rel="tag"># matplotlib</a>
+              <a href="/boyou1999.gitee.io/tags/python/" rel="tag"># python</a>
+              <a href="/boyou1999.gitee.io/tags/matplotlib/" rel="tag"># matplotlib</a>
           </div>
 
         
@@ -439,11 +439,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/" rel="prev" title="PyTorch入门——Tensor">
+    <a href="/boyou1999.gitee.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/" rel="prev" title="PyTorch入门——Tensor">
       <i class="fa fa-chevron-left"></i> PyTorch入门——Tensor
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/" rel="next" title="绝对值约束的线性化方法">
+    <a href="/boyou1999.gitee.io/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/" rel="next" title="绝对值约束的线性化方法">
       绝对值约束的线性化方法 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -512,27 +512,27 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Boyou Jiang"
-      src="/images/head.png">
+      src="/boyou1999.gitee.io/images/head.png">
   <p class="site-author-name" itemprop="name">Boyou Jiang</p>
   <div class="site-description" itemprop="description">Welcome to my website! Born in 1999, graduating from HUST SEEE, now I'm a PhD student majoring in Electrical Engineering at College of Electrical Engineering Zhejiang University.</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
+          <a href="/boyou1999.gitee.io/archives/">
         
           <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-            <a href="/categories/">
+            <a href="/boyou1999.gitee.io/categories/">
           
         <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+            <a href="/boyou1999.gitee.io/tags/">
           
         <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">tags</span></a>
@@ -547,10 +547,10 @@
         <a href="mailto:boyou1999@foxmail.com" title="E-Mail → mailto:boyou1999@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
-        <a href="/images/weixin.jpg" title="Weixin → &#x2F;images&#x2F;weixin.jpg"><i class="fab fa-weixin fa-fw"></i>Weixin</a>
+        <a href="/boyou1999.gitee.io/images/weixin.jpg" title="Weixin → &#x2F;images&#x2F;weixin.jpg"><i class="fab fa-weixin fa-fw"></i>Weixin</a>
       </span>
       <span class="links-of-author-item">
-        <a href="/images/qq.jpg" title="qq&#x2F;Tim → &#x2F;images&#x2F;qq.jpg"><i class="fab fa-qq fa-fw"></i>qq/Tim</a>
+        <a href="/boyou1999.gitee.io/images/qq.jpg" title="qq&#x2F;Tim → &#x2F;images&#x2F;qq.jpg"><i class="fab fa-qq fa-fw"></i>qq/Tim</a>
       </span>
   </div>
 
@@ -632,32 +632,32 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="/boyou1999.gitee.io/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="/boyou1999.gitee.io/lib/velocity/velocity.min.js"></script>
+  <script src="/boyou1999.gitee.io/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/js/utils.js"></script>
+<script src="/boyou1999.gitee.io/js/utils.js"></script>
 
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
+<script src="/boyou1999.gitee.io/js/motion.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+<script src="/boyou1999.gitee.io/js/schemes/pisces.js"></script>
 
 
-
-
-  
+<script src="/boyou1999.gitee.io/js/next-boot.js"></script>
 
 
 
 
   
-<script src="/js/local-search.js"></script>
+
+
+
+
+  
+<script src="/boyou1999.gitee.io/js/local-search.js"></script>
 
 
 

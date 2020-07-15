@@ -2,13 +2,13 @@
 <search>
   <entry>
     <title>留言墙</title>
-    <url>/2020/07/11/%E7%95%99%E8%A8%80%E5%A2%99/</url>
+    <url>/boyou1999.gitee.io/2020/07/11/%E7%95%99%E8%A8%80%E5%A2%99/</url>
     <content><![CDATA[<p>这篇博客的评论区就作为本站的留言墙，欢迎大家留言~</p>
 ]]></content>
   </entry>
   <entry>
     <title>江舟</title>
-    <url>/2020/07/07/jiangzhou/</url>
+    <url>/boyou1999.gitee.io/2020/07/07/jiangzhou/</url>
     <content><![CDATA[<p>今天开通了自己的个人博客，好像也叫个人网站。其实CSDN之类的就已经具备了同样的功能了，而且它有的我这里很多都没有。但是总感觉这样子似乎就有了属于自己的小天地，就很舒服。</p>
 <a id="more"></a>
 <p>这个是依托于github的，并不是自己搭建前台后台数据库这种从零起步的方式。虽然好像不那么牛批，但现在一是能力有限，二是还没有什么特别的需求，暂时也还不用搞得过于复杂。</p>
@@ -16,7 +16,7 @@
 <ul>
 <li>图片</li>
 </ul>
-<p><img src="/2020/07/07/jiangzhou/1007550.jpg" alt></p>
+<p><img src="/boyou1999.gitee.io/2020/07/07/jiangzhou/1007550.jpg" alt></p>
 <p>而且之前特地找了hexo博客图片该怎么<a href="https://www.cnblogs.com/hugochen1024/p/12570656.html" target="_blank" rel="noopener">添加</a>，也就是通过设置然后在hexo生成md文件时自动生成一个文件夹；但是之前typora就已经设置过添加图片时自动添加文件夹，这么一来似乎也没必要通过hexo的yml文件设置了。</p>
 <ul>
 <li>公式</li>
@@ -43,7 +43,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <p>其实这篇博客本来是想把我的那篇《江舟》贴上来的，倒不是说那篇写得多好，只是做实验习惯性地用那篇，包括我的个人公众号也是用的那篇作为实验文章。所以博文的tag以及题目都和实际内容有些不对，此处解释一下。</p>
 <p>好像没什么要说的了，以后除了写一些专业上的总结，可能还会写点比较随性的其他东西（是不是叫“随笔”？）。可能会有读后感之类的。其实我个人觉得读后感这种东西比较麻烦，因为你要写的话一般就得回顾情节，记不住就得回去翻，这个过程很麻烦。但是我觉得一篇比较好的读后感肯定是要做到这样子的，那些up做视频有的真的堪称”一帧一帧“看原片。所以：1、回顾也是有必要的，看完就忘莫得感想似乎也就没有很大意义；2、好东西肯定是要花时间的。</p>
 <p>差不多就这样吧，最近有点颓，感觉啥事儿都没干，论文看得既慢又不得劲儿，无功优化的文章似乎有点问题，还不如直接线性化之后用求解器来得快，还得继续研究。今天还被七年级的表弟（不知道是不是这么称呼）的数学题问住了，不过后面和韬神讨论认为是题目印刷错了（因为直线和圆无交点，强解是无实数解的）。顺便也贴出来，大家有兴趣可以尝试一下。</p>
-<p><img src="/2020/07/07/jiangzhou/image-20200707205216990.png" alt></p>
+<p><img src="/boyou1999.gitee.io/2020/07/07/jiangzhou/image-20200707205216990.png" alt></p>
 ]]></content>
       <categories>
         <category>文字</category>
@@ -54,7 +54,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>绝对值约束的线性化方法</title>
-    <url>/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/</url>
+    <url>/boyou1999.gitee.io/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>Tricks~</p>
 <a id="more"></a>
 <p>来源于——</p>
@@ -90,7 +90,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>python绘图——matplotlib</title>
-    <url>/2020/07/14/AI/MatplotLib/</url>
+    <url>/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/</url>
     <content><![CDATA[<p>python绘图——线型图、散点图、直方图、饼图。</p>
 <a id="more"></a>
 <h1 id="plot、scatter"><a href="#plot、scatter" class="headerlink" title="plot、scatter"></a>plot、scatter</h1><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>我用matlab期间几乎只用到了这两种图：</p>
@@ -104,8 +104,8 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.plot(x, y)</span><br><span class="line">plt.scatter(x, y)</span><br></pre></td></tr></table></figure>
 <p>除了带了个前缀，和matlab里绘图也没啥差别。</p>
 <h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a=<span class="number">1</span></span><br><span class="line">b=<span class="number">0</span></span><br><span class="line">x = torch.linspace(<span class="number">-1</span>, <span class="number">1</span>, <span class="number">100</span>)</span><br><span class="line">y = a*x.pow(<span class="number">2</span>)+b+<span class="number">0.1</span>*torch.rand(x.size())</span><br><span class="line">plt.scatter(x, y)  <span class="comment"># 待拟合数据</span></span><br><span class="line">plt.plot(x, y)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_1.png" width="500"></p>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_2.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_1.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_2.png" width="500"></p>
 <h2 id="丰富图像"><a href="#丰富图像" class="headerlink" title="丰富图像"></a>丰富图像</h2><h3 id="线型图"><a href="#线型图" class="headerlink" title="线型图"></a>线型图</h3><p><code>plt.plot(x, y, &quot;r--o&quot;)</code></p>
 <h4 id="线条颜色"><a href="#线条颜色" class="headerlink" title="线条颜色"></a>线条颜色</h4><ol>
 <li><p>“b”：指定绘制的线条颜色为蓝色。</p>
@@ -142,15 +142,15 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <li><code>:</code>：指定线条形状为点线。 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = torch.randn(<span class="number">30</span>)</span><br><span class="line">y = torch.randn(<span class="number">30</span>)</span><br><span class="line">plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">plt.plot(y, <span class="string">'b:o'</span>)  <span class="comment"># python默认画在同一张图中</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_3.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_3.png" width="500"></p>
 <p>这个输出的图片质量确实比matlab要好。</p>
 <h4 id="标签和图例"><a href="#标签和图例" class="headerlink" title="标签和图例"></a>标签和图例</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = torch.randn(<span class="number">30</span>)</span><br><span class="line">y = torch.randn(<span class="number">30</span>)</span><br><span class="line">p1, = plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">p2, = plt.plot(y, <span class="string">'b:o'</span>)  <span class="comment"># 为了使用图例必须给每个绘图加上名字（matlab里是不是叫句柄？），而且名字后面得加一个英文逗号","</span></span><br><span class="line">plt.title(<span class="string">"test"</span>)  <span class="comment"># 图名</span></span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)  <span class="comment"># </span></span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)  <span class="comment"># x、y轴标签</span></span><br><span class="line">plt.legend([p1, p2], [<span class="string">"x"</span>, <span class="string">"y"</span>])  <span class="comment"># 图例</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_4.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_4.png" width="500"></p>
 <h4 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.figure()  <span class="comment"># 先用这个定义一个实例（就像matlab里的figure）</span></span><br><span class="line">plt.subplot(<span class="number">121</span>)  <span class="comment"># 第1张子图</span></span><br><span class="line">p1, = plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">plt.subplot(<span class="number">122</span>)  <span class="comment"># 第2张子图</span></span><br><span class="line">p2, = plt.plot(y, <span class="string">'b:o'</span>)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_5.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_5.png" width="500"></p>
 <p>也可以加上分别加上标签等：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.figure()  <span class="comment"># 先用这个定义一个实例（就像matlab里的figure）</span></span><br><span class="line">plt.subplot(<span class="number">121</span>)  <span class="comment"># 第1张子图</span></span><br><span class="line">p1, = plt.plot(x, <span class="string">'r--*'</span>)</span><br><span class="line">plt.title(<span class="string">"subplot1"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)  <span class="comment"># 位置放前放后都可以</span></span><br><span class="line">plt.subplot(<span class="number">122</span>)  <span class="comment"># 第2张子图</span></span><br><span class="line">p2, = plt.plot(y, <span class="string">'b:o'</span>)</span><br><span class="line">plt.title(<span class="string">"subplot2"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)  <span class="comment"># 位置放前放后都可以</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_6.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_6.png" width="500"></p>
 <p>不过好像有点错位~</p>
 <h3 id="散点图"><a href="#散点图" class="headerlink" title="散点图"></a>散点图</h3><p>和线形图有几点区别：</p>
 <ul>
@@ -158,7 +158,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <li>丰富图像也不能在后面直接用<code>“xxx”</code>，必须挨个儿指定，具体见下文。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.scatter(x, y, c=<span class="string">'r'</span>, marker=<span class="string">'o'</span>, label=<span class="string">"(x,y)"</span>) </span><br><span class="line">plt.title(<span class="string">"scatter"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"y"</span>)</span><br><span class="line">plt.legend(loc=<span class="number">2</span>)  <span class="comment"># 指定图例的位置</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_7.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_7.png" width="500"></p>
 <ul>
 <li><code>c</code>——点的颜色</li>
 <li><code>marker</code>——点的形状</li>
@@ -178,9 +178,9 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <li><code>bins=30</code>，指定条纹数，默认是10</li>
 <li><code>color</code>，指定条纹颜色</li>
 </ul>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_8.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_8.png" width="500"></p>
 <h1 id="饼图"><a href="#饼图" class="headerlink" title="饼图"></a>饼图</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">labels = [<span class="string">"Dogs"</span>, <span class="string">"Cats"</span>, <span class="string">"Birds"</span>]</span><br><span class="line">sizes = [<span class="number">30</span>, <span class="number">40</span>, <span class="number">30</span>]</span><br><span class="line">plt.pie(sizes, explode=(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>), labels=labels, autopct=<span class="string">'%1.1f%%'</span>, startangle=<span class="number">90</span>)</span><br><span class="line">plt.axis(<span class="string">'equal'</span>)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/14/AI/MatplotLib/Figure_9.png" width="500"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/14/AI/MatplotLib/Figure_9.png" width="500"></p>
 <p>说明：</p>
 <ul>
 <li><code>sizes= [15, 50, 35]</code>的三个数字确定了每部分数据系列在整个圆形中的占比；</li>
@@ -204,7 +204,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>PyTorch入门——Tensor</title>
-    <url>/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/</url>
+    <url>/boyou1999.gitee.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/</url>
     <content><![CDATA[<p>tensor和numpy差不多。</p>
 <a id="more"></a>
 <h1 id="pytorch的安装"><a href="#pytorch的安装" class="headerlink" title="pytorch的安装"></a>pytorch的安装</h1><p>去官网，可以直接生成相应的安装指令。</p>
@@ -252,7 +252,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>PyTorch入门——数组维度及squeeze、unsqueeze</title>
-    <url>/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8%E2%80%94%E2%80%94%E6%95%B0%E7%BB%84%E7%BB%B4%E5%BA%A6%E5%8F%8Asqueeze%E3%80%81unsqueeze/</url>
+    <url>/boyou1999.gitee.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8%E2%80%94%E2%80%94%E6%95%B0%E7%BB%84%E7%BB%B4%E5%BA%A6%E5%8F%8Asqueeze%E3%80%81unsqueeze/</url>
     <content><![CDATA[<p>初学PyTorch，觉得这里的数组维度系统比起matlab要更加复杂，自己的理解还是不够透彻，这个问题在接触到squeeze、unsqueeze两个函数是更加凸显出来。</p>
 <a id="more"></a>
 <p>今天忽然感觉理解精进了一些，执笔记录。</p>
@@ -315,7 +315,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>numpy入门</title>
-    <url>/2020/07/12/AI/numpy/</url>
+    <url>/boyou1999.gitee.io/2020/07/12/AI/numpy/</url>
     <content><![CDATA[<p>numpy入门学习~~我咋觉得就是把matlab的各种定义又学了一遍<code>(*/ω＼*)</code></p>
 <a id="more"></a>
 <h1 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h1><h2 id="安装及使用"><a href="#安装及使用" class="headerlink" title="安装及使用"></a>安装及使用</h2><p><code>pip install numpy</code></p>
@@ -323,7 +323,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>貌似机器学习AI这一块都叫“数组”、“多维数组”，不叫矩阵了？但其实意思都是一个意思，下文就不特别区分了。</p>
 <h3 id="手动输入元素"><a href="#手动输入元素" class="headerlink" title="手动输入元素"></a>手动输入元素</h3><p>元素分隔必须用英文逗号，空格报错！！</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a=np.array([<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">b=np.array([[<span class="number">2</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">2</span>]])</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/12/AI/numpy/image-20200712190946893.png" width="100"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/12/AI/numpy/image-20200712190946893.png" width="100"></p>
 <p>注意：圆括号、中括号是怎么放的！</p>
 <ul>
 <li>单行或单列<code>array([2,3])</code></li>
@@ -332,16 +332,16 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 </ul>
 <h3 id="创建全1、全0、随机数组"><a href="#创建全1、全0、随机数组" class="headerlink" title="创建全1、全0、随机数组"></a>创建全1、全0、随机数组</h3><p>即matlab中的ones和zeros。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a=np.ones([<span class="number">5</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line">b=np.zeros([<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/12/AI/numpy/image-20200712191836818.png" width="100"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/12/AI/numpy/image-20200712191836818.png" width="100"></p>
 <p>注意：</p>
 <ul>
 <li>这里填的数字表示有几行几列，同样也要放在中括号里面！！</li>
 <li>除了二维矩阵，同样可以定义高维的，其实也就是多个二维数组拼在一起。<code>a=np.ones([5,3,4])</code>里的第一个数字是第三个维度，后两个是行数和列数。和matlab相反：matlab是最后一个数表示第三个维度。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">np.empty([<span class="number">5</span>,<span class="number">8</span>])</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/12/AI/numpy/image-20200712192708907.png" width="300"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/12/AI/numpy/image-20200712192708907.png" width="300"></p>
 <h3 id="对单个元素进行赋值"><a href="#对单个元素进行赋值" class="headerlink" title="对单个元素进行赋值"></a>对单个元素进行赋值</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b[<span class="number">0</span>,<span class="number">0</span>]=<span class="number">1</span></span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/12/AI/numpy/image-20200712192240696.png" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/12/AI/numpy/image-20200712192240696.png" width="200"></p>
 <ul>
 <li>指定某个元素不用加()了；</li>
 <li>索引是从0开始的，和matlab不一样~~</li>
@@ -359,7 +359,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 </ol>
 <p>测试：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a=np.ones([<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">print(a.itemsize)</span><br><span class="line">print(a)</span><br><span class="line">print(a.ndim)</span><br><span class="line">print(a.shape)</span><br><span class="line">print(a.size)</span><br><span class="line">print(a.dtype)</span><br><span class="line">a=np.ones([<span class="number">2</span>,<span class="number">3</span>],dtype=np.int32)</span><br><span class="line">print(a.dtype)</span><br><span class="line">a.itemsize</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/12/AI/numpy/image-20200712201138470.png" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/12/AI/numpy/image-20200712201138470.png" width="200"></p>
 <h2 id="多维数组的基本操作"><a href="#多维数组的基本操作" class="headerlink" title="多维数组的基本操作"></a>多维数组的基本操作</h2><h3 id="算术运算"><a href="#算术运算" class="headerlink" title="算术运算"></a>算术运算</h3><p><code>+-*/</code>都是对应元素运算，相当于matlab的点运算。和常数进行四则运算就是每个元素都和这个常数进行运算；<code>m*n</code>矩阵和<code>m*1</code>、<code>1*n</code>矩阵运算同matlab，就是一竖排或者一横排排过去进行运算（我相信你懂我意思<code>(*/ω＼*)</code>）。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(a)</span><br><span class="line">a-np.ones([<span class="number">1</span>,<span class="number">3</span>])</span><br><span class="line">-------</span><br><span class="line">[[<span class="number">1</span> <span class="number">1</span> <span class="number">1</span>]</span><br><span class="line"> [<span class="number">1</span> <span class="number">1</span> <span class="number">1</span>]]</span><br><span class="line"></span><br><span class="line">array([[<span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>],</span><br><span class="line">       [<span class="number">0.</span>, <span class="number">0.</span>, <span class="number">0.</span>]])</span><br></pre></td></tr></table></figure>
 <h3 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h3><p>这个有点不严谨的样子：</p>
@@ -379,7 +379,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(c)</span><br><span class="line">print(c.max())</span><br><span class="line">print(c.max(axis=<span class="number">0</span>))</span><br><span class="line">print(c.max(axis=<span class="number">1</span>))</span><br><span class="line">------</span><br><span class="line">[[<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>]</span><br><span class="line"> [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>]]</span><br><span class="line"><span class="number">3</span></span><br><span class="line">[<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>]</span><br><span class="line">[<span class="number">3</span> <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
 <p>当axis=0时， 计算方向是针对数组的列的； 当axis=1时， 计算方向是针对数组的行的。  </p>
 <p>注意：无论计算方向是行还是列，print之后都是行向量，和matlab同样有所区别。</p>
-<p><img src="/2020/07/12/AI/numpy/image-20200712205853289.png" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/12/AI/numpy/image-20200712205853289.png" width="200"></p>
 <ul>
 <li>exp： 对数组中的所有元素进行指数运算</li>
 <li>sqrt： 对数组中的所有元素进行平方根运算</li>
@@ -424,7 +424,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>PSCAD4.6安装教程</title>
-    <url>/2020/07/12/%E6%95%99%E7%A8%8B/pscad4.6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
+    <url>/boyou1999.gitee.io/2020/07/12/%E6%95%99%E7%A8%8B/pscad4.6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>4.6比4.5简直好用不要太多！！！（虽然我觉得整个pscad比起simulink给人的感觉还是要难用好多~~）下面就给出4.6的安装链接及安装关键点。</p>
 <a id="more"></a>
 <h1 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h1><p>百度云链接：<a href="https://pan.baidu.com/s/1nKhOCmMOEvnU4yWyKCWAAw" target="_blank" rel="noopener">https://pan.baidu.com/s/1nKhOCmMOEvnU4yWyKCWAAw</a><br>提取码：0cjt</p>
@@ -445,23 +445,23 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>next主题改变文章字体大小</title>
-    <url>/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/</url>
+    <url>/boyou1999.gitee.io/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/</url>
     <content><![CDATA[<p>对我来说next和yilia两个主题各有优劣：next排布看上去规整很多，但有时候就是太规整了让人觉得过于严肃，过于技术风，而且正文的默认字体、字号我不是很喜欢；yilia的字体和配色让我觉得更适合写文字，我很喜欢（话说yilia作者的文笔真的好好，他的文章读起来太舒服了，附上作者博客<a href="http://litten.me/" target="_blank" rel="noopener">地址</a>）。</p>
 <a id="more"></a>
 <p>next字体的修改可参考这篇<a href="https://leay.net/2020/02/14/hexo-next-font/#%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">博客</a>。在博客的yml文件里本来是直接有各个部分的字体字号修改的，但是我这边修改global可以生效，post无法生效。按照上面的博客，我把global字体改成了[思源宋体]，挺好看的。</p>
 <p>所以下面就是改字号的问题了。网上找了一圈没找到满意的解答，然后照着html源代码找了一圈，终于让我找到了自认为很方便的修改方法。</p>
 <h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>具体方法如下：</p>
 <p>1、找到<code>themes\next\layout\_macro</code>路径下的<code>post.swig</code>文件</p>
-<p><img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711103910355.png" width="600" style="zoom:80%;"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711103910355.png" width="600" style="zoom:80%;"></p>
 <p>2、找到<code>post body</code>部分</p>
-<p><img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711105121656.png" width="600"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711105121656.png" width="600"></p>
 <p>3、在div中加入字体大小样式<code>style=&quot;font-size:14px&quot;</code>，个人觉得14px大小看着挺舒服的。</p>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>图片方面，next比较好的地方就是他会自动帮你居中，看generate之后的html源码可以看到自动生成了<code>&lt;center&gt;&lt;/center&gt;</code>，但是：</p>
 <ol>
 <li><p>next会自动给图片加上标题，就是会把<code>alt=&quot;xxx&quot;</code>里面的内容放在图片下面。很多时候图片是截图的，名字都是imgxxxx一堆乱七八糟的，所以就得手动删掉。对比之下，删alt比加center还是方便一些。</p>
 </li>
-<li><p>有时候是不希望图片居中的<img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/05CC0954.gif" width="20">。比如这个图片在yilia主题下是会显示在文字中间的（下图是typora的显示效果），也是我想要的效果。next里面我没找到给图片加居中效果样式的地方，要是开放出来变成可以选择的就好了。</p>
-<p><img src="/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711110440902.png" width="500"></p>
+<li><p>有时候是不希望图片居中的<img src="/boyou1999.gitee.io/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/05CC0954.gif" width="20">。比如这个图片在yilia主题下是会显示在文字中间的（下图是typora的显示效果），也是我想要的效果。next里面我没找到给图片加居中效果样式的地方，要是开放出来变成可以选择的就好了。</p>
+<p><img src="/boyou1999.gitee.io/2020/07/11/%E6%95%99%E7%A8%8B/next_changefontsize/image-20200711110440902.png" width="500"></p>
 </li>
 </ol>
 <p>next的确集成了很多东西，不用自己操心。最开始用yilia的时候很多功能都是照着网上一点点加的，这个过程有点麻烦，但还是有点小小的成就感。</p>
@@ -473,7 +473,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>追番</title>
-    <url>/2020/07/09/%E7%94%9F%E6%B4%BB/%E8%BF%BD%E7%95%AA/</url>
+    <url>/boyou1999.gitee.io/2020/07/09/%E7%94%9F%E6%B4%BB/%E8%BF%BD%E7%95%AA/</url>
     <content><![CDATA[<p>沉迷追番无法自拔。</p>
 <a id="more"></a>
 <p>这阵子陷入了明明还有事情没干，但就是不想动手的状态。选择各种浪，或者学一些不用很费脑子带来虚假成就感的东西。</p>
@@ -484,7 +484,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <p>再往前推其实还看了JoJo前三部，到了替身那一部就没看了。还看了overlord，第三部看了前面几集没看了。</p>
 <p>最近的话就是7.1开始猛刷了一波火影忍者，一直到150集左右，两倍速+是不是快进，期间还看完了《The Last》剧场版。上周浪的主调就是火影。</p>
 <p>这周突然没有欲望继续看了，但是看了几期up主做的剧情向的视频。这周浪的主调就是搭个人博客+今天学css。</p>
-<p>真的不能再浪了<img src="/2020/07/09/%E7%94%9F%E6%B4%BB/%E8%BF%BD%E7%95%AA/09C99002.gif" alt="img" width="50">~~有点晚了，今天一定要早睡！！</p>
+<p>真的不能再浪了<img src="/boyou1999.gitee.io/2020/07/09/%E7%94%9F%E6%B4%BB/%E8%BF%BD%E7%95%AA/09C99002.gif" alt="img" width="50">~~有点晚了，今天一定要早睡！！</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -496,7 +496,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>CSS学习第一课</title>
-    <url>/2020/07/09/%E6%95%99%E7%A8%8B/css/</url>
+    <url>/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文为CSS学习的第一课（对应视频p1-p11），参考资料为B站<code>狂神说Java</code>教学<a href="https://www.bilibili.com/video/BV1YJ411a7dy" target="_blank" rel="noopener">视频</a>。</p>
 <a id="more"></a>
 <h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><p>由于本文主角为CSS，所以只介绍HTML的基本概念。</p>
@@ -570,11 +570,11 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-id">#y</span>&#123;</span></span><br><span class="line">        color: blueviolet;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-id">#j</span>&#123;</span></span><br><span class="line">        color: blue;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-id">#b</span>&#123;</span></span><br><span class="line">        color: aqua;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><p>id选择器&gt;类选择器&gt;标签选择器</p>
 <h2 id="层次选择器"><a href="#层次选择器" class="headerlink" title="层次选择器"></a>层次选择器</h2><p>顾名思义，层次选择器涉及html中元素之间的层级关系，比如某个p元素的相邻p元素，参考下图（<em>来源于狂神视频截图</em>）。</p>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709175040799.png" width="400"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709175040799.png" width="400"></p>
 <p>代码如下：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p4<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p5<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p6<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        不是段落</span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>网页显示效果如下：</p>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709180531092.png" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709180531092.png" width="150"></p>
 <p>层次选择器有以下几种分类：</p>
 <ul>
 <li>后代选择器</li>
@@ -586,24 +586,24 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><p>选择某一层级标签的所有后代标签（不只是后一代，所有后代都算，儿子、孙子等等），用法<code>标签 标签</code>：标签+空格+标签。下面代码的意思就是body标签的所有子代中的p标签采用该样式。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body p&#123;</span><br><span class="line"><span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#ff1c37</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>可以看到不只是p1、p2、p3，4、5、6也变了，但是非p的没变。</p>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709180617207.png" alt="image-20200709180617207" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709180617207.png" alt="image-20200709180617207" width="150"></p>
 <h3 id="子选择器"><a href="#子选择器" class="headerlink" title="子选择器"></a>子选择器</h3><p>选择某一层级标签的所有子一代标签（儿子算，孙子不算），用法<code>标签&gt;标签</code>：标签+&gt;+标签。下面代码的意思就是body标签的所有子一代中的p标签采用该样式。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body&gt;p&#123;</span><br><span class="line"><span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#ff1c37</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709180751886.png" alt="image-20200709180751886" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709180751886.png" alt="image-20200709180751886" width="150"></p>
 <h3 id="相邻兄弟选择器"><a href="#相邻兄弟选择器" class="headerlink" title="相邻兄弟选择器"></a>相邻兄弟选择器</h3><p>选择某标签<strong>向下</strong>相邻的标签，只选中下一个，多的没有（“弟弟选择器”）。用法：<code>某元素+标签</code>。显然一般需要通过class或id指定了某一个（或一些）元素，才方便用这种方式。</p>
 <p>为测试方便，给第一个p添加class：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>p1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.t</span>+<span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#ff1c37</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709181356470.png" alt="image-20200709181356470" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709181356470.png" alt="image-20200709181356470" width="150"></p>
 <p>只有p1向下相邻的p2变色。</p>
 <p>进一步测试：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>p1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p4<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>pp<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>p5<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p6<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        不是段落</span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>p7<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p8<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>hhh<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p9<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709182319590.png" alt="image-20200709182319590" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709182319590.png" alt="image-20200709182319590" width="150"></p>
 <p>通过上面的例子看出，用层级选择器，要把html中的层级关系搞清楚，ul算一个层级，li又是一个层级，底下的p又是一个层级。</p>
 <h3 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h3><p>当前选中标签的向下的全部兄弟标签（”所有弟弟选择器“）。用法：<code>某便签~标签</code>。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.act</span>~<span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#ff1c37</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"act"</span>&gt;</span>p1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p4<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>pp<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>p5<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p6<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        不是段落</span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>p7<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p8<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">"t"</span>&gt;</span>hhh<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p9<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709182940917.png" alt="image-20200709182940917" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709182940917.png" alt="image-20200709182940917" width="150"></p>
 <h2 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h2><p>伪类，直接特征是后面带冒号，起到过滤的作用。看例子就明白了。</p>
 <ul>
 <li><code>ul li:first-child</code>是设置无序列表中的第一项；</li>
@@ -613,10 +613,10 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 </ul>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span>&#123;</span></span><br><span class="line">        color: aqua;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:last-child</span>&#123;</span></span><br><span class="line">        font-size: 30px;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(3)</span>&#123;    <span class="comment">/*这个数字就是第几个子元素，和类型无关，但如果指定的第x的类型和前面的便签不匹配就不生效*/</span></span></span><br><span class="line"><span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#ff0000</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-tag">p</span><span class="selector-pseudo">:nth-of-type(3)</span>&#123;    <span class="comment">/*这个数字不是按顺序的第几个，而是该类型的第x个，比如第一个不是p，那么就不会被算进去，所以说这种设置只要有p元素就一定会生效的*/</span></span></span><br><span class="line"><span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#0000ff</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>hade1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>li1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>li2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>li3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709213112427.png" alt="image-20200709213112427" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709213112427.png" alt="image-20200709213112427" width="150"></p>
 <h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>每个元素都有很多属性（href、class、id等），通过属性选择器可以筛选出属性满足要求的元素，改变其样式。而且可以结合正则表达式来批量筛选。</p>
 <p>下图是教程视频里的一波设置，本文中并未用到，只是觉得这个设置比较丰富，可以作为参考留个印象。</p>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709115722112.png" alt="image-20200709115722112" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709115722112.png" alt="image-20200709115722112" width="200"></p>
 <ul>
 <li><code>a[id=&quot;j&quot;]</code>筛选出id为j的a元素，赋予样式；</li>
 <li><code>a[class*=&quot;jby&quot;]</code>筛选出class包含jby的a元素（注意此处有样式的覆盖）；</li>
@@ -625,7 +625,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 </ul>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.demo</span> <span class="selector-tag">a</span>&#123;</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">    <span class="selector-tag">a</span><span class="selector-attr">[id=<span class="string">"j"</span>]</span>&#123;</span></span><br><span class="line">        color: yellow;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-tag">a</span><span class="selector-attr">[class*=<span class="string">"jby"</span>]</span></span></span><br><span class="line">    &#123;</span><br><span class="line">        font-size: 30px;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-tag">a</span><span class="selector-attr">[class^=<span class="string">"xxx"</span>]</span></span></span><br><span class="line">    &#123;</span><br><span class="line">        font: bold 40px/50px Arial;/*单单设置一个bold还报错，必须后面的都设置*/</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-tag">a</span><span class="selector-attr">[class$=<span class="string">"xxx"</span>]</span></span></span><br><span class="line">    &#123;</span><br><span class="line">        font: bold 20px/50px Arial;/*单单设置一个bold还报错，必须后面的都设置*/</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"demo"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"www.baidu.com"</span> <span class="attr">class</span>=<span class="string">"text decorated-root xxx"</span> <span class="attr">id</span>=<span class="string">"j"</span>&gt;</span>今天<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"www.taobao.com"</span> <span class="attr">class</span>=<span class="string">"xxx cbd jby"</span> <span class="attr">id</span>=<span class="string">"b"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"abc"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"a.pdf"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"jby x"</span>&gt;</span>5<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"jby y"</span>&gt;</span>6<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span>&gt;</span>7<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709214750003.png" alt="image-20200709214750003" width="150"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709214750003.png" alt="image-20200709214750003" width="150"></p>
 <p>实际使用过程中，应该还是基本选择器用得最多，其他的能看懂就好，不常用的肯定也记不长久。</p>
 <h1 id="美化网页元素"><a href="#美化网页元素" class="headerlink" title="美化网页元素"></a>美化网页元素</h1><h2 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h2><p>可分开设置，可以用<code>font:xxx</code>一次性设置。</p>
 <p><a href="https://www.w3school.com.cn/cssref/pr_font_font.asp" target="_blank" rel="noopener">font</a>可按顺序设置如下属性：</p>
@@ -645,32 +645,32 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <p>区域高度：<code>height</code></p>
 <p>实现单行文字上下居中：行高和块的高度<code>height line-height</code>一致</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"background: yellow;height: 50px;line-height: 50px"</span>&gt;</span></span><br><span class="line">yello and other colors</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220247222.png" alt="image-20200709220247222" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220247222.png" alt="image-20200709220247222" width="200"></p>
 <p><code>height=20</code>：</p>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220540771.png" alt="image-20200709220540771" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220540771.png" alt="image-20200709220540771" width="200"></p>
 <p><code>line-height=20</code>：</p>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220622842.png" alt="image-20200709220622842" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220622842.png" alt="image-20200709220622842" width="200"></p>
 <p>装饰：<code>text-decoration</code>，上、下、中划线，去除装饰等</p>
 <p>文本图片上下居中：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">img,span&#123;</span><br><span class="line">vertical-align: middle;/*两个元素垂直居中*/</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-----------------------------------------</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">&lt;&lt;img src="../img/1.jpg" width="100" &gt;</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>xxxx<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220859720.png" alt="image-20200709220859720" width="200"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709220859720.png" alt="image-20200709220859720" width="200"></p>
 <p>这种东西很多都是需要用的时候再去查就可以了，平时如果用得不多，也很难记住。</p>
 <p>汇总：</p>
 <p><strong>style：</strong></p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">"Arial Black"</span>,楷体; <span class="comment">/*可以同时写两个，一个指定英文及数字，一个指定中文*/</span></span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">20px</span>;<span class="comment">/*px——像素，em——缩进（较大）*/</span></span><br><span class="line">    <span class="attribute">font-weight</span>: bold;<span class="comment">/*字体粗细*/</span></span><br><span class="line">    <span class="attribute">color</span>: rosybrown;<span class="comment">/*字体颜色*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.p1</span>&#123;</span><br><span class="line">    <span class="attribute">text-indent</span>: <span class="number">2em</span>;<span class="comment">/*首行缩进两字符*/</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[id=<span class="string">"j"</span>]</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[class*=<span class="string">"jby"</span>]</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[class^=<span class="string">"xxx"</span>]</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">font</span>: bold <span class="number">40px</span>/<span class="number">50px</span> Arial;<span class="comment">/*单单设置一个bold还报错，必须后面的都设置*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[class$=<span class="string">"xxx"</span>]</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">font</span>: bold <span class="number">20px</span>/<span class="number">50px</span> Arial;<span class="comment">/*单单设置一个bold还报错，必须后面的都设置*/</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.y1</span>&#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: underline;</span><br><span class="line">    <span class="attribute">background</span>: aqua;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.y2</span>&#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: line-through;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.y3</span>&#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: overline;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;<span class="comment">/*去下划线*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">img</span>,<span class="selector-tag">span</span>&#123;</span><br><span class="line">    <span class="attribute">vertical-align</span>: middle;<span class="comment">/*两个元素垂直居中*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>HTML，body部分：</strong></p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"demo"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"www.baidu.com"</span> <span class="attr">class</span>=<span class="string">"text decorated-root xxx"</span> <span class="attr">id</span>=<span class="string">"j"</span>&gt;</span>今天<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"www.taobao.com"</span> <span class="attr">class</span>=<span class="string">"xxx cbd jby"</span> <span class="attr">id</span>=<span class="string">"b"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"abc"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"a.pdf"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"jby x"</span>&gt;</span>5<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"jby y"</span>&gt;</span>6<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span>&gt;</span>7<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>gaishu<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span></span><br><span class="line">    平静安详的元泱境界，每隔333年，总会有一个神秘而恐怖的异常生物重生，它就是魁拔！魁拔的每一次出现，都会给元泱境界带来巨大的灾难！即便是天界的神族，也在劫难逃。在天地两界各种力量的全力打击下，魁拔一次次被消灭，但又总是按333年的周期重新出现。魁拔纪元1664年，天神经过精确测算后，在第六代魁拔苏醒前一刻对其进行毁灭性打击。但谁都没有想到，由于一个差错导致新一代魁拔成功地逃脱了致命一击。很快，天界魁拔司和地界神圣联盟均探测到了魁拔依然生还的迹象。因此，找到魁拔，彻底消灭魁拔，再一次成了各地热血勇士的终极目标。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"background: yellow;height: 50px;line-height: 50px"</span>&gt;</span></span><br><span class="line">yello and other colors</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"y1"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"y2"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"y3"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/1.jpg"</span> <span class="attr">width</span>=<span class="string">"100"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>xxxx<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709221239320.png" alt="image-20200709221239320" width="800"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709221239320.png" alt="image-20200709221239320" width="800"></p>
 <h2 id="超链接伪类"><a href="#超链接伪类" class="headerlink" title="超链接伪类"></a>超链接伪类</h2><p>如下图，简单理解就是多了一些操作：</p>
-<p><img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709162630960.png" alt="image-20200709162630960" width="400"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709162630960.png" alt="image-20200709162630960" width="400"></p>
 <p>直接举例，style和body如下：</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*默认效果*/</span></span><br><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*鼠标移上去之后的效果*/</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*鼠标按住不放的效果*/</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*阴影的颜色  阴影的水平移动距离  竖直移动距离  模糊半径（越大越模糊，0则是完全复制一份）*/</span></span><br><span class="line"><span class="selector-id">#pi</span>&#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: <span class="number">#ff1c37</span> <span class="number">10px</span> <span class="number">10px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"img/613927.jpg"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>姓名：雷丘<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>xxxx<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--    把href设置为#就是留在原页面--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>￥99<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"pi"</span>&gt;</span>jintain<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>效果：</p>
 <ul>
-<li>正常：<img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709221930043.png" alt="image-20200709221930043" width="200"></li>
-<li>鼠标移动上去：<img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709222023938.png" alt="image-20200709222023938" width="200"></li>
-<li>鼠标点击不放：<img src="/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709222101831.png" alt="image-20200709222101831" width="200"></li>
+<li>正常：<img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709221930043.png" alt="image-20200709221930043" width="200"></li>
+<li>鼠标移动上去：<img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709222023938.png" alt="image-20200709222023938" width="200"></li>
+<li>鼠标点击不放：<img src="/boyou1999.gitee.io/2020/07/09/%E6%95%99%E7%A8%8B/css/image-20200709222101831.png" alt="image-20200709222101831" width="200"></li>
 </ul>
 <p>新知识：<a href="https://www.w3school.com.cn/html5/html5_nav.asp" target="_blank" rel="noopener">nav 标签</a> 、html中的<a href="https://www.cnblogs.com/chenshihaook/p/6186343.html" target="_blank" rel="noopener">几种空格</a></p>
 <h1 id="随便聊聊"><a href="#随便聊聊" class="headerlink" title="随便聊聊"></a>随便聊聊</h1><p>感觉整理的时间比看视频的时间还要长~</p>
@@ -686,23 +686,23 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>hexo博客时间添加时分秒</title>
-    <url>/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/</url>
+    <url>/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png" alt="image-20200708135440487" style="zoom:80%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png" alt="image-20200708135440487" style="zoom:80%;"></div>
 
 <a id="more"></a>
 <h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="初期尝试"><a href="#初期尝试" class="headerlink" title="初期尝试"></a>初期尝试</h2><p>最开始在网上搜寻一番并没有介绍这个的，然后我想着年月日和时分秒肯定是都存在hexo里面的，只不过是yilia模板默认只取了年月日，只要我找到年月日加载到页面是在哪个文件哪个地方进行设置的，应该就有办法把时分秒一起加上去。</p>
 <p>在yilia的文件里瞎找一通，最终找到是在如下文件（<code>date.ejs</code>）中进行设置：</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140110539.png" alt="image-20200708140110539" style="zoom:80%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140110539.png" alt="image-20200708140110539" style="zoom:80%;"></div>
 
 <p>打开该文件，可以看到是下面一串东西。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140246998.png" alt="image-20200708140246998" style="zoom:80%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140246998.png" alt="image-20200708140246998" style="zoom:80%;"></div>
 
 <p>大致可以猜到是通过<code>date(post.date,date_format)</code>把时间传递到页面上的，我最终确定其实还结合了博客网页的html源码：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140635905.png" alt="image-20200708140635905" style="zoom:80%;"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140635905.png" alt="image-20200708140635905" style="zoom:80%;"></p>
 <p>图中圈出来的一串变量和<code>date.ejs</code>里的显然是一样的，然后后面的<code>date(post.date,date_format)</code>消失变成了具体的时间，可以断定<code>date(post.date,date_format)</code>就是显示时间的变量。</p>
 <p>接下来的步骤就带点尝试了，试着把括号里的<code>date_format</code>换成<code>time_format</code>，也试着改掉博客配置文件里的时间格式（可以去下图<a href="http://momentjs.com/docs/#/displaying/format/" target="_blank" rel="noopener">网站</a>找格式）。</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708141048768.png" alt="image-20200708141048768" style="zoom:80%;"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708141048768.png" alt="image-20200708141048768" style="zoom:80%;"></p>
 <h2 id="最终设置"><a href="#最终设置" class="headerlink" title="最终设置"></a>最终设置</h2><p>最终敲定的是年月日+时分（date+空格+time）。</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">date(post.date,date_format)+<span class="string">" "</span>+time(post.time,date_format)</span><br></pre></td></tr></table></figure>
 <p>改配置文件里的时间格式好像也是可以的（我试的是<code>LLL</code>格式），因为我中间有出来过一次。这里想吐槽一下就是有时候更改配置，浏览器刷新显示会有延时，然后就时而让人不爽。</p>
@@ -723,7 +723,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>hexo中post和page的差别</title>
-    <url>/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E4%B8%ADpost%E5%92%8Cpage%E7%9A%84%E5%B7%AE%E5%88%AB/</url>
+    <url>/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E4%B8%ADpost%E5%92%8Cpage%E7%9A%84%E5%B7%AE%E5%88%AB/</url>
     <content><![CDATA[<p>刚刚学会了新建页面，注意我自己自然而言说的都是“页面”，而不是博文。下面简单说一下<code>页面</code>和<code>文章</code>的区别。</p>
 <a id="more"></a>
 <p>我所要求的用<code>&lt;!--more--&gt;</code>显示部分内容其实是针对博文的！其实也可以理解，一个页面你只会要求它可以不断下拉，一般不会要求它折叠起来。</p>
@@ -733,7 +733,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 </blockquote>
 <p>而且<code>页面</code>是不会显示在<code>归档</code>等综合展示博文的地方的。</p>
 <p>总之页面和博文是两个东西：官方称博文为page，称页面为post。官方教程内容如下：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E4%B8%ADpost%E5%92%8Cpage%E7%9A%84%E5%B7%AE%E5%88%AB/image-20200708102156713.png" alt="image-20200708102156713"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E4%B8%ADpost%E5%92%8Cpage%E7%9A%84%E5%B7%AE%E5%88%AB/image-20200708102156713.png" alt="image-20200708102156713"></p>
 <ul>
 <li>总结：</li>
 </ul>
@@ -748,23 +748,23 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>添加新页面</title>
-    <url>/2020/07/08/index/</url>
+    <url>/boyou1999.gitee.io/2020/07/08/index/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>除了yilia模板给我们创建的一些页面，还是有必要学会自己定义新的页面，比如相册，学习资料链接等。这一篇博客就是叫大家如何在hexo的yilia模板下新建自定义页面。</p>
 <a id="more"></a>
 <h1 id="添加新页面"><a href="#添加新页面" class="headerlink" title="添加新页面"></a>添加新页面</h1><p>参考<a href="https://blog.csdn.net/weixin_44539392/article/details/86621999" target="_blank" rel="noopener">博客</a>，用<code>hexo new page album</code>指令，然后就可以看到在source下多了一个<code>album</code>的文件夹，里面有一个<code>index.md</code>文件，如下图：</p>
-<p>​    <img src="/2020/07/08/index/image-20200708085021066.png" alt="image-20200708085021066"></p>
+<p>​    <img src="/boyou1999.gitee.io/2020/07/08/index/image-20200708085021066.png" alt="image-20200708085021066"></p>
 <h1 id="配置路径让页面显示"><a href="#配置路径让页面显示" class="headerlink" title="配置路径让页面显示"></a>配置路径让页面显示</h1><p>编辑主题的 <code>_config.yml</code> ，在 <code>menu</code> 中添加如下路径（这和上面参考的博客中说的不一样，但是也能正常显示页面）</p>
-<p><img src="/2020/07/08/index/image-20200708085224818.png" alt="image-20200708085224818"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/index/image-20200708085224818.png" alt="image-20200708085224818"></p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>这样子貌似和写博文没什么区别（就连编辑内容也是用的md而不是自定义html），只不过完全开辟了另一块空间，之前博文都是默认在<code>_posts</code>文件夹下，现在可以放在同级的更多文件夹下，其实就实现了预想的效果。</p>
-<div align="center"><img src="/2020/07/08/index/image-20200708085739842.png" alt="image-20200708085739842" style="zoom:100%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/index/image-20200708085739842.png" alt="image-20200708085739842" style="zoom:100%;"></div>
 
 <p>这就是效果，可以在相册这个md中添加图片，实现相册效果。</p>
-<p><img src="/2020/07/08/index/image-20200708085936839.png" alt="image-20200708085936839"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/index/image-20200708085936839.png" alt="image-20200708085936839"></p>
 <p>现在就试一试：</p>
 <ul>
 <li>毕业典礼</li>
 </ul>
-<p><img src="/2020/07/08/index/CSCL0153.JPG" alt="CSCL0153"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/index/CSCL0153.JPG" alt="CSCL0153"></p>
 
 <p>html代码，实测可以正常显示</p>
 
@@ -776,13 +776,13 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <p>需要注意的是，最原始的插入图片，代码是如下形式：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">![<span class="built_in">image</span><span class="number">-20200708091825701</span>](index/<span class="built_in">image</span><span class="number">-20200708091825701.</span>png)</span><br></pre></td></tr></table></figure>
 <p>这样子如果直接在两边添加<code>&lt;div align=center&gt;</code>之类的也会被自动翻译成html，最终的效果就是：</p>
-<p><img src="/2020/07/08/index/image-20200708092128636.png" alt="image-20200708092128636" style="zoom:100%;"></p>
-<p>所以正确的做法就是复制的时候随便选一下缩放，使代码标准的HTML插图格式<img src="/2020/07/08/index/01AFBE1F.gif" alt="img" style="zoom:10%;">，<strong>然后在两边加上居中的div块</strong>。好在typora插图图片是会自动询问缩放，点一下就可以（不要点100%），倒还不是过于复杂。</p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/index/image-20200708092128636.png" alt="image-20200708092128636" style="zoom:100%;"></p>
+<p>所以正确的做法就是复制的时候随便选一下缩放，使代码标准的HTML插图格式<img src="/boyou1999.gitee.io/2020/07/08/index/01AFBE1F.gif" alt="img" style="zoom:10%;">，<strong>然后在两边加上居中的div块</strong>。好在typora插图图片是会自动询问缩放，点一下就可以（不要点100%），倒还不是过于复杂。</p>
 <ul>
 <li>补充：</li>
 </ul>
 <p>这是刚刚用搜狗输入法插入一张表情图的效果：</p>
-<div align="center"><img src="/2020/07/08/index/image-20200708092744823.png" alt="image-20200708092744823" style="zoom:100%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/index/image-20200708092744823.png" alt="image-20200708092744823" style="zoom:100%;"></div>
 
 <p>发现在网页正常显示了，大吃一惊，回来一看发现并不是常规插图的代码，而是typora自动把搜狗的图用html的方式插入了。</p>
 <ul>
@@ -797,7 +797,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <ul>
 <li>再补充：</li>
 </ul>
-<p><img src="/2020/07/08/index/image-20200708093743410.png" alt="image-20200708093743410" style="zoom:100%;"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/index/image-20200708093743410.png" alt="image-20200708093743410" style="zoom:100%;"></p>
 <p>代码块还是ok的：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;  &#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p><strong>好像我这样自定义的页面没法用<code>&lt;!-- more --&gt;</code>来进行文章折叠。</strong></p>
@@ -808,7 +808,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>hexo中插入pdf文件</title>
-    <url>/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/</url>
+    <url>/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/</url>
     <content><![CDATA[<p>下载<a href="./test.pdf">链接</a></p>
 <a id="more"></a>
 <div class="pdfobject-container" data-target="test.pdf" data-height="500px"></div>
@@ -817,23 +817,23 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <li>文章</li>
 </ul>
 <p>本文即为一篇文章，经试验，下图的路径可以正常显示。也就是说文章中是否添加<code>./</code>都可以正常识别出，但是不可<code>./hexo_pdf/test.pdf</code>，这样子编译生成后的路径会多出一个<code>hexo_pdf</code>导致无法识别到pdf文件。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708132425004.png" alt="image-20200708132425004" style="zoom:80%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708132425004.png" alt="image-20200708132425004" style="zoom:80%;"></div>
 
 <ul>
 <li>页面</li>
 </ul>
 <p>页面的路径必须填写完整，如下图。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708132815762.png" alt="image-20200708132815762" style="zoom:80%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708132815762.png" alt="image-20200708132815762" style="zoom:80%;"></div>
 
 <p>因为hexo本身对待页面和文章就是不同的，在public文件夹下可以看到，post和page本身的编译就是不同的。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708133055817.png" alt="image-20200708133055817" style="zoom:100%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708133055817.png" alt="image-20200708133055817" style="zoom:100%;"></div>
 
 <p>我们前面介绍的针对于图片的插件，其实也可以认为是针对文章的，他会自动生成<code>2020/07/xx</code>样式的前缀，正是因为文章编译后的绝对路径就是这种形式的。如果我们再添加一些前缀，反而和插件所做的工作冲突，导致路径找不到。</p>
 <p>而既然插件没有帮我们对页面的路径进行修改，那我们就得写全编译后的绝对路径。这照着下面这张图其实很好写。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708133725644.png" alt="image-20200708133725644" style="zoom:80%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708133725644.png" alt="image-20200708133725644" style="zoom:80%;"></div>
 
 <p>也可以简单测试一下：如果在页面环境下用<code>./CV_Chinese.pdf</code>设置，可以看到路径是下面这个，而<code>CV</code>目录下是没有<code>CV_Chinese.pdf</code>的，只有<code>index</code>下才有，所以报错。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708133526227.png" alt="image-20200708133526227" style="zoom:100%;"></div>
+<div align="center"><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_pdf/image-20200708133526227.png" alt="image-20200708133526227" style="zoom:100%;"></div>
 
 <ul>
 <li>总结</li>
@@ -851,7 +851,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>hexo博客插入图片失败解决方法</title>
-    <url>/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
+    <url>/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h1><p>今天晚上花了大概1个小时在晚上搜寻各种hexo博客插入图片无法显示的解决办法，很多方法是重叠的，所以真正不同的解决方法并不多。</p>
 <p>尤其让我有些惊讶的是不同的几篇博客，内容根本完全一样，就是纯粹的copy，虽然说明了转载（注明转载的话往往还放在最后一句，这种东西不应该开篇说明最好吗？），但是我觉得直接给出链接不就可以了吗？为何还要完全从头到尾copy一遍？而且多少加上一些自己的理解，稍微修缮一下原博文，这样不断转载的版本也会越来越好。</p>
 <p>闲言碎语多扯了一点。本回答受该<a href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener">博客</a>启发较大。</p>
@@ -869,9 +869,9 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 </ol>
 <h2 id="2-2-typora中图像设置"><a href="#2-2-typora中图像设置" class="headerlink" title="2.2 typora中图像设置"></a>2.2 typora中图像设置</h2><p>一般来说，大家会现在typora里写好md格式的博客，然后通过<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>进行一下本地测试，确认无误后再发布到远端。</p>
 <p>暂且不说hexo博客的图片插入是个问题，我相信当初单纯利用typora做笔记时，图片文件的管理就让很多人头疼过，typora官方似乎也意识到这个问题，所以<code>偏好设置</code>中<code>图像</code>是专门的一项，提供了很多选择。</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707222506636.png" alt="在这里插入图片描述"></p>
 <p>我相信大多数同学写md时的图片很多可能是直接截图或者在其他地方copy的，然后在typora中直接粘贴就ok了。但是这么做之前最好把typora插入图片时采取何种操作配置好，否则md文件和图片相隔十万八千里，后续一旦移动md文件图片就识别不出来，相信大家用过typora都深有体会。</p>
-<p>所以接下来讲一下typora如何设置。直接给结论：<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png" alt="在这里插入图片描述"></p>
+<p>所以接下来讲一下typora如何设置。直接给结论：<br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707224416296.png" alt="在这里插入图片描述"></p>
 <p>框里的路径是：<code>./${filename}</code>。<code>./</code>表示当前文件夹，<code>${filename}</code>表示当前文件名。这么设置的好处：</p>
 <ol>
 <li>图片资源文件夹有了；</li>
@@ -883,39 +883,39 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">npm install https:<span class="comment">//github.com/CodeFalling/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
 <p>为什么需要这么插件呢？</p>
 <p>因为我们虽然在<code>source\_posts</code>文件夹下写了md文件，也有了图片资源文件夹存了图片，但从我们前面typora中的设置不难知道，实际上md文件中的图片路径都是相对路径（<code>./${filename}</code>）。而实际网上看到的博文显然不是md文件，而是html文件，从md到html的转变就是hexo帮我们做的，还记得<code>hexo g</code>命令吗？就是干这个的。转换后的html文件在<code>public</code>目录下，路径是通过日期指示的。</p>
-<p>下面第一张图是存放md文件的地方，图片就在图中的<code>jiangzhou</code>文件夹中；第二张图是generate之后存在html和图片资源的地方。<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png" alt="在这里插入图片描述"></p>
+<p>下面第一张图是存放md文件的地方，图片就在图中的<code>jiangzhou</code>文件夹中；第二张图是generate之后存在html和图片资源的地方。<br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230449117.png" alt="在这里插入图片描述"><br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230344687.png" alt="在这里插入图片描述"></p>
 <p>大家如果了解过html的话，应该知道里面的图片应该是指定绝对路径的，大家可以打开上面第二张图的<code>index.html</code>，找到插入图片的地方，查看是否是可用的绝对路径，我的如下图。大家如果问题还没解决的话应该不是像我一样的日期+文件夹指明的绝对路径。</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707230945338.png" alt="在这里插入图片描述"></p>
 <p>说到这儿，大家应该知道，理论上需要<strong>将md中图片的相对路径转换成html中的绝对路径</strong>，这样图片才能正常显示。因为我们图片资源也有了，显示不出来只能是路径不对（为验证，大家图片显示不对的话，打开index.html，插图片地方的路径肯定是一串不明所以的字母数字）。</p>
 <p><strong>路径转换</strong>就是该节最开始提到的插件的作用：根据md图片的相对路径，给出html中图片的绝对路径。</p>
-<h2 id="2-4-修改md图片路径"><a href="#2-4-修改md图片路径" class="headerlink" title="2.4 修改md图片路径"></a>2.4 修改md图片路径</h2><p>经过前面typora的设置，大家粘贴图片到typora应该是这种画风：<br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png" alt="在这里插入图片描述"><br><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png" alt="在这里插入图片描述"></p>
+<h2 id="2-4-修改md图片路径"><a href="#2-4-修改md图片路径" class="headerlink" title="2.4 修改md图片路径"></a>2.4 修改md图片路径</h2><p>经过前面typora的设置，大家粘贴图片到typora应该是这种画风：<br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2020070723222350.png" alt="在这里插入图片描述"><br><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707232211833.png" alt="在这里插入图片描述"></p>
 <p>路径：md文件名/图片名</p>
 <p>图片资源文件夹：自动生成且同名。</p>
 <p>这时如果用<code>hexo clean</code>、<code>hexo g</code>生成html文件，用Notepad++或其他工具打开index.html（路径见下方第一张图），找到插图片的地方，查看图片路径（见下方第一张图）：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png" alt="在这里插入图片描述"></p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233408779.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233627620.png" alt="在这里插入图片描述"></p>
 <p>发现图片路径似乎多了一串<code>07/07/test</code>！如果用<code>hexo s</code>在本地查看网页，会发现是下面这个样子：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233802521.png" alt="在这里插入图片描述"></p>
 <p>点开那个未加载的图：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707233836795.png" alt="在这里插入图片描述"></p>
 <p>继续点<code>The image</code>：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234315826.png" alt="在这里插入图片描述"></p>
 <p>可以发现这里显示的路径和我们在html文件源码中看到的是一致的，既然觉得路径重复，那么我们就把重复的删了试试看：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234443787.png" alt="在这里插入图片描述"></p>
 <p>图片显示出来了！</p>
 <p>既然是路径问题，那么是不是插件有问题？或者我们使用方法错了？</p>
 <p>找到插件安装位置（插件都在node_modules文件夹下），打开readme文件（怎么是1985年的？！<code>(*/ω＼*)</code>）</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707234721423.png" alt="在这里插入图片描述"></p>
 <p>readme如下：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235038719.png" alt="在这里插入图片描述"></p>
 <p>瞬间发现别人的说明书讲得明明白白，言简意赅！我们的转化后路径不对正是因为我们md文件中图片的路径不对，图片名前面不能有其他东西！</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235339515.png" alt="在这里插入图片描述"></p>
 <p>删去<code>test/</code>（这样md中图片就没法正常显示了），重新<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>测试——</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235556349.png" alt="在这里插入图片描述"></p>
 <p>本地网页显示如下：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png" alt="在这里插入图片描述"></p>
+<p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200707235939737.png" alt="在这里插入图片描述"></p>
 <p>发布到远端我这边也没什么问题，至此该问题算是解决了。主要就是编译（我姑且称之为编译，有点那个味道）前需要在md中把图片的路径都删去前面的<code>xxx/</code>，图片一多可能还是有些繁琐，但目前还没有找到更好的替代方法。</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png" alt="在这里插入图片描述"></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="/boyou1999.gitee.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/20200708000313401.png" alt="在这里插入图片描述"></p>
 <p>找解决方案找了一个多小时，写这篇博客好像写了2个多小时。感觉应该把整个过程讲得还算比较清楚了。</p>
 <p>但是这种问题向来因人而异，同样的解决方法可能可以解决我的问题，但对另一个人无效。还是要多查找资料，多尝试，多思考。</p>
 ]]></content>
@@ -925,7 +925,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>海上风电</title>
-    <url>/2020/07/07/%E7%A7%91%E7%A0%94/%E6%B5%B7%E4%B8%8A%E9%A3%8E%E7%94%B5/</url>
+    <url>/boyou1999.gitee.io/2020/07/07/%E7%A7%91%E7%A0%94/%E6%B5%B7%E4%B8%8A%E9%A3%8E%E7%94%B5/</url>
     <content><![CDATA[<p>海上风电项目。</p>
 <p>今天开通了自己的个人博客，好像也叫个人网站。其实CSDN之类的就已经具备了同样的功能了，而且它有的我这里很多都没有。但是总感觉这样子似乎就有了属于自己的小天地，就很舒服。</p>
 <a id="more"></a>
@@ -967,7 +967,7 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2020/07/07/%E6%95%99%E7%A8%8B/hello-world/</url>
+    <url>/boyou1999.gitee.io/2020/07/07/%E6%95%99%E7%A8%8B/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <a id="more"></a>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
