@@ -21,26 +21,21 @@
     var CONFIG = {"hostname":"jby1999.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。">
+  <meta name="description" content="Tricks~">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客时间添加时分秒">
-<meta property="og:url" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/index.html">
+<meta property="og:title" content="绝对值约束的线性化方法">
+<meta property="og:url" content="http://jby1999.github.io/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Boyou Jiang&#39;s Personal Website">
-<meta property="og:description" content="前言由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。">
+<meta property="og:description" content="Tricks~">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140110539.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140246998.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140635905.png">
-<meta property="og:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708141048768.png">
-<meta property="article:published_time" content="2020-07-08T06:46:04.000Z">
-<meta property="article:modified_time" content="2020-07-08T06:46:04.000Z">
+<meta property="article:published_time" content="2020-07-15T07:33:54.203Z">
+<meta property="article:modified_time" content="2020-07-15T07:33:54.203Z">
 <meta property="article:author" content="Boyou Jiang">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="优化">
+<meta property="article:tag" content="线性化">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png">
 
-<link rel="canonical" href="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/">
+<link rel="canonical" href="http://jby1999.github.io/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -53,7 +48,7 @@
   };
 </script>
 
-  <title>hexo博客时间添加时分秒 | Boyou Jiang's Personal Website</title>
+  <title>绝对值约束的线性化方法 | Boyou Jiang's Personal Website</title>
   
 
 
@@ -212,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/">
+    <link itemprop="mainEntityOfPage" href="http://jby1999.github.io/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/head.png">
@@ -225,7 +220,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hexo博客时间添加时分秒
+          绝对值约束的线性化方法
         </h1>
 
         <div class="post-meta">
@@ -238,7 +233,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-07-08 14:46:04" itemprop="dateCreated datePublished" datetime="2020-07-08T14:46:04+08:00">2020-07-08</time>
+              <time title="Created: 2020-07-15 15:33:54" itemprop="dateCreated datePublished" datetime="2020-07-15T15:33:54+08:00">2020-07-15</time>
             </span>
 
           
@@ -257,8 +252,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -268,7 +263,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.1k</span>
+              <span>856</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -287,35 +282,33 @@
     <div style="font-size:14px" class="post-body" itemprop="articleBody">
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于hexo的yilia模板默认显示的时间只有年月日，但其实我个人会特别在意时分。因为不同时间发出来的东西可能代表着不同的心境。比如深夜发，会不会是遇到伤心事有些失眠？清晨发，可能心情比较好？类似种种。经过一番探究终于找到解决办法。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708135440487.png" alt="image-20200708135440487" style="zoom:80%;"></div>
-
+        <p>Tricks~</p>
 <a id="more"></a>
-<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="初期尝试"><a href="#初期尝试" class="headerlink" title="初期尝试"></a>初期尝试</h2><p>最开始在网上搜寻一番并没有介绍这个的，然后我想着年月日和时分秒肯定是都存在hexo里面的，只不过是yilia模板默认只取了年月日，只要我找到年月日加载到页面是在哪个文件哪个地方进行设置的，应该就有办法把时分秒一起加上去。</p>
-<p>在yilia的文件里瞎找一通，最终找到是在如下文件（<code>date.ejs</code>）中进行设置：</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140110539.png" alt="image-20200708140110539" style="zoom:80%;"></div>
-
-<p>打开该文件，可以看到是下面一串东西。</p>
-<div align="center"><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140246998.png" alt="image-20200708140246998" style="zoom:80%;"></div>
-
-<p>大致可以猜到是通过<code>date(post.date,date_format)</code>把时间传递到页面上的，我最终确定其实还结合了博客网页的html源码：</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708140635905.png" alt="image-20200708140635905" style="zoom:80%;"></p>
-<p>图中圈出来的一串变量和<code>date.ejs</code>里的显然是一样的，然后后面的<code>date(post.date,date_format)</code>消失变成了具体的时间，可以断定<code>date(post.date,date_format)</code>就是显示时间的变量。</p>
-<p>接下来的步骤就带点尝试了，试着把括号里的<code>date_format</code>换成<code>time_format</code>，也试着改掉博客配置文件里的时间格式（可以去下图<a href="http://momentjs.com/docs/#/displaying/format/" target="_blank" rel="noopener">网站</a>找格式）。</p>
-<p><img src="/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/image-20200708141048768.png" alt="image-20200708141048768" style="zoom:80%;"></p>
-<h2 id="最终设置"><a href="#最终设置" class="headerlink" title="最终设置"></a>最终设置</h2><p>最终敲定的是年月日+时分（date+空格+time）。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date(post.date,date_format)+<span class="string">" "</span>+time(post.time,date_format)</span><br></pre></td></tr></table></figure>
-<p>改配置文件里的时间格式好像也是可以的（我试的是<code>LLL</code>格式），因为我中间有出来过一次。这里想吐槽一下就是有时候更改配置，浏览器刷新显示会有延时，然后就时而让人不爽。</p>
-<p>效果就是最开始的第一张图了~~</p>
-<ul>
-<li>补充</li>
-</ul>
-<p>hexo博客显示的时间是md文件改动的时间，并不是上面写的<code>date: xxxx</code>。</p>
-<h1 id="重要订正"><a href="#重要订正" class="headerlink" title="重要订正"></a>重要订正</h1><p><code>date(post.date,post.time,date_format)+&quot; &quot;+time(post.date,post.time,date_format)</code></p>
-<p>刚刚写博客的时候还特地试着把date(xxx)里的post.time以及time(xxx)里的post.date删了，然后发现就出现了刷新一下页面，所有博文的时间都显示跟着刷新显示当前的时间，这tm不成了时钟了吗~~</p>
-<p>总之，都不要删，就挺好。</p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>本来想显示更新时间而不是创建时间，但是不知道怎么把updated显示到页面上。</p>
-<p>还有就是我忽然觉得没有必要了~~我直接在写完或者更新的时候把date改掉，然后在正文中注明每个时间点不就可以吗？没必要折腾了，累了累了。</p>
+<p>来源于——</p>
+<blockquote>
+<p>孙田, 邹鹏, 杨知方, 等. 动态无功优化的多阶段求解方法[J]. 电网技术, 2016, 40(06): 1804–1810.</p>
+</blockquote>
+<p>绝对值约束线性化的关键就在于把绝对值项线性化地表示出来，假设有绝对值项 <script type="math/tex">y = \left| {m - n} \right|</script>，则可用如下式子线性化：</p>
+<script type="math/tex; mode=display">
+\left\{ \matrix{
+  0 \le y - (m - n) \le M \cdot {\delta _1} \hfill \cr 
+  0 \le y - (n - m) \le M \cdot {\delta _2} \hfill \cr 
+  {\delta _1} + {\delta _2} = 1 \hfill \cr}  \right.</script><p>其中：$M$是一个较大的正数，${\delta _2}\ {\delta _2}$均为0-1变量。</p>
+<p>解释如下：</p>
+<p>根据 $\delta$ 取值的不同，有两种可能的情况——</p>
+<ol>
+<li>$\delta _1=0, \delta _2=1$</li>
+<li>$\delta _1=1, \delta _2=0$</li>
+</ol>
+<p>假设 <script type="math/tex">m > n</script>，理论上 <script type="math/tex">y = m - n</script>，正确的 $\delta$ 取值应该是第1种情况，接下来我们要判断的就是在式$(1)$的约束下，是否能保证情形2不存在。</p>
+<p>将情形2的取值代入，得到<script type="math/tex">\left\{ \matrix{
+  y = n - m < 0 \hfill \cr 
+  y \ge m - n > 0 \hfill \cr}  \right.</script>，显然矛盾，所以情形2不可能成立。</p>
+<p>总结：绝对值约束实际上就是取 $m-n$ 和 $n-m$ 二者中的较大者。<script type="math/tex">\left\{ \matrix{
+  0 \le y - (m - n) \hfill \cr 
+  0 \le y - (n - m) \hfill \cr}  \right.</script>使得$y$ 大于等于二者中的较大值，再通过0-1变量和大M使得对应的不等约束最终取等。</p>
+<p>0-1变量对应着不同的情形，但不合理的情形实际上都在约束的相互作用之间成为不可行解。和最大值约束一样，绝对值约束同样是一种“选择性”的约束：如果a&gt;b，那么如何；如果a&lt;b，又如何。0-1变量就是给出各种情形，约束间的相互作用消去不合理的情形，大M则是用于在不同情形下松弛某些约束。</p>
+<p>每次写这种东西都觉得自己的表达能力很欠缺~</p>
 
     </div>
 
@@ -331,7 +324,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://jby1999.github.io/2020/07/08/%E6%95%99%E7%A8%8B/hexo_time/" title="hexo博客时间添加时分秒">http://jby1999.github.io/2020/07/08/教程/hexo_time/</a>
+    <a href="http://jby1999.github.io/2020/07/15/%E4%BC%98%E5%8C%96/%E7%BB%9D%E5%AF%B9%E5%80%BC%E7%BA%A6%E6%9D%9F%E7%BA%BF%E6%80%A7%E5%8C%96%E6%96%B9%E6%B3%95/" title="绝对值约束的线性化方法">http://jby1999.github.io/2020/07/15/优化/绝对值约束线性化方法/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -342,7 +335,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+              <a href="/tags/%E4%BC%98%E5%8C%96/" rel="tag"># 优化</a>
+              <a href="/tags/%E7%BA%BF%E6%80%A7%E5%8C%96/" rel="tag"># 线性化</a>
           </div>
 
         
@@ -351,13 +345,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/08/%E6%95%99%E7%A8%8B/hexo%E4%B8%ADpost%E5%92%8Cpage%E7%9A%84%E5%B7%AE%E5%88%AB/" rel="prev" title="hexo中post和page的差别">
-      <i class="fa fa-chevron-left"></i> hexo中post和page的差别
+    <a href="/2020/07/14/AI/MatplotLib/" rel="prev" title="python绘图——matplotlib">
+      <i class="fa fa-chevron-left"></i> python绘图——matplotlib
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/07/09/%E6%95%99%E7%A8%8B/css/" rel="next" title="CSS学习第一课">
-      CSS学习第一课 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -417,7 +408,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初期尝试"><span class="nav-number">2.1.</span> <span class="nav-text">初期尝试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最终设置"><span class="nav-number">2.2.</span> <span class="nav-text">最终设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#重要订正"><span class="nav-number">3.</span> <span class="nav-text">重要订正</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题"><span class="nav-number">4.</span> <span class="nav-text">问题</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -586,6 +576,61 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
