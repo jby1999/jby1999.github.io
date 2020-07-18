@@ -924,6 +924,48 @@ f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好�
       </tags>
   </entry>
   <entry>
+    <title>海上风电</title>
+    <url>/2020/07/07/%E7%A7%91%E7%A0%94/%E6%B5%B7%E4%B8%8A%E9%A3%8E%E7%94%B5/</url>
+    <content><![CDATA[<p>海上风电项目。</p>
+<p>今天开通了自己的个人博客，好像也叫个人网站。其实CSDN之类的就已经具备了同样的功能了，而且它有的我这里很多都没有。但是总感觉这样子似乎就有了属于自己的小天地，就很舒服。</p>
+<a id="more"></a>
+<p>这个是依托于github的，并不是自己搭建前台后台数据库这种从零起步的方式。虽然好像不那么牛批，但现在一是能力有限，二是还没有什么特别的需求，暂时也还不用搞得过于复杂。</p>
+<p>就我个人而言，能写字，能贴图，能输公式，能敲代码也就可以了，所以接下来我就把这几种都试验一下。</p>
+<ul>
+<li>图片</li>
+</ul>
+<p>而且之前特地找了hexo博客图片该怎么<a href="https://www.cnblogs.com/hugochen1024/p/12570656.html" target="_blank" rel="noopener">添加</a>，也就是通过设置然后在hexo生成md文件时自动生成一个文件夹；但是之前typora就已经设置过添加图片时自动添加文件夹，这么一来似乎也没必要通过hexo的yml文件设置了。</p>
+<ul>
+<li>公式</li>
+</ul>
+<ol>
+<li><p>行内公式：$f=x^2$</p>
+</li>
+<li><p>单独成行：</p>
+</li>
+</ol>
+<script type="math/tex; mode=display">
+f=x^2+y^2</script><p>居然还自动编号了，感动。可以引用吗？好像没法交叉引用自动更新（想想也可以理解），只能手动引用公式$(1)$。</p>
+<ul>
+<li>代码</li>
+</ul>
+<ol>
+<li><p>行内代码片：<code>a=ones(m,n)</code>（我发现我完全就是在写markdown，如果兼容就最好了）</p>
+</li>
+<li><p>代码块：</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">system.out.println(<span class="string">"今天开通了个人博客！"</span>)</span><br></pre></td></tr></table></figure>
+<p>好了，实验结束！</p>
+<p>其实这篇博客本来是想把我的那篇《江舟》贴上来的，倒不是说那篇写得多好，只是做实验习惯性地用那篇，包括我的个人公众号也是用的那篇作为实验文章。所以博文的tag以及题目都和实际内容有些不对，此处解释一下。</p>
+<p>好像没什么要说的了，以后除了写一些专业上的总结，可能还会写点比较随性的其他东西（是不是叫“随笔”？）。可能会有读后感之类的。其实我个人觉得读后感这种东西比较麻烦，因为你要写的话一般就得回顾情节，记不住就得回去翻，这个过程很麻烦。但是我觉得一篇比较好的读后感肯定是要做到这样子的，那些up做视频有的真的堪称”一帧一帧“看原片。所以：1、回顾也是有必要的，看完就忘莫得感想似乎也就没有很大意义；2、好东西肯定是要花时间的。</p>
+<p>差不多就这样吧，最近有点颓，感觉啥事儿都没干，论文看得既慢又不得劲儿，无功优化的文章似乎有点问题，还不如直接线性化之后用求解器来得快，还得继续研究。今天还被七年级的表弟（不知道是不是这么称呼）的数学题问住了，不过后面和韬神讨论认为是题目印刷错了（因为直线和圆无交点，强解是无实数解的）。顺便也贴出来，大家有兴趣可以尝试一下。</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/07/07/%E6%95%99%E7%A8%8B/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
