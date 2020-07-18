@@ -18,13 +18,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"boyou1999.gitee.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"jby1999.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="tensor和numpy差不多。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PyTorch入门——Tensor">
-<meta property="og:url" content="http://boyou1999.gitee.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/index.html">
+<meta property="og:url" content="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/index.html">
 <meta property="og:site_name" content="Boyou Jiang&#39;s Personal Website">
 <meta property="og:description" content="tensor和numpy差不多。">
 <meta property="og:locale" content="en_US">
@@ -35,7 +35,7 @@
 <meta property="article:tag" content="PyTorch">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://boyou1999.gitee.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/">
+<link rel="canonical" href="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/">
 
 
 <script id="page-configurations">
@@ -207,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://boyou1999.gitee.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/">
+    <link itemprop="mainEntityOfPage" href="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/head.png">
@@ -336,7 +336,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://boyou1999.gitee.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/" title="PyTorch入门——Tensor">http://boyou1999.gitee.io/2020/07/14/AI/PyTorch入门_Tensor/</a>
+    <a href="http://jby1999.github.io/2020/07/14/AI/PyTorch%E5%85%A5%E9%97%A8_Tensor/" title="PyTorch入门——Tensor">http://jby1999.github.io/2020/07/14/AI/PyTorch入门_Tensor/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -570,6 +570,31 @@
 
 
   
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
 
 
 
